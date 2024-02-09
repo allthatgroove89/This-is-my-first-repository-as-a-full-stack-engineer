@@ -1,0 +1,1826 @@
+[     5.793] (--) Log file renamed from "/home/saulvera/.local/share/xorg/Xorg.pid-860.log" to "/home/saulvera/.local/share/xorg/Xorg.0.log"
+[     5.793] 
+X.Org X Server 1.20.13
+X Protocol Version 11, Revision 0
+[     5.794] Build Operating System: linux Ubuntu
+[     5.794] Current Operating System: Linux saulvera-ThinkBook-15-G2-ITL 5.15.0-92-generic #102~20.04.1-Ubuntu SMP Mon Jan 15 13:09:14 UTC 2024 x86_64
+[     5.794] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.15.0-92-generic root=UUID=42fb5542-2a11-425a-ab64-2ce3e9446a21 ro quiet splash vt.handoff=7
+[     5.794] Build Date: 29 January 2024  12:44:21PM
+[     5.794] xorg-server 2:1.20.13-1ubuntu1~20.04.15 (For technical support please see http://www.ubuntu.com/support) 
+[     5.794] Current version of pixman: 0.38.4
+[     5.794] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[     5.794] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[     5.794] (==) Log file: "/home/saulvera/.local/share/xorg/Xorg.0.log", Time: Tue Feb  6 20:47:23 2024
+[     5.794] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[     5.795] (==) No Layout section.  Using the first Screen section.
+[     5.795] (==) No screen section available. Using defaults.
+[     5.795] (**) |-->Screen "Default Screen Section" (0)
+[     5.795] (**) |   |-->Monitor "<default monitor>"
+[     5.795] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[     5.795] (==) Automatically adding devices
+[     5.795] (==) Automatically enabling devices
+[     5.795] (==) Automatically adding GPU devices
+[     5.795] (==) Automatically binding GPU devices
+[     5.795] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[     5.796] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[     5.796] 	Entry deleted from font path.
+[     5.796] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[     5.796] 	Entry deleted from font path.
+[     5.796] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[     5.796] 	Entry deleted from font path.
+[     5.796] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[     5.796] 	Entry deleted from font path.
+[     5.796] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[     5.796] 	Entry deleted from font path.
+[     5.796] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/Type1,
+	built-ins
+[     5.796] (==) ModulePath set to "/usr/lib/xorg/modules"
+[     5.796] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[     5.796] (II) Loader magic: 0x55b216a3b020
+[     5.796] (II) Module ABI versions:
+[     5.796] 	X.Org ANSI C Emulation: 0.4
+[     5.796] 	X.Org Video Driver: 24.1
+[     5.796] 	X.Org XInput driver : 24.1
+[     5.796] 	X.Org Server Extension : 10.0
+[     5.796] (++) using VT number 2
+
+[     5.797] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_31
+[     5.797] (II) xfree86: Adding drm device (/dev/dri/card0)
+[     5.798] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 12 paused 0
+[     5.799] (--) PCI:*(0@0:2:0) 8086:9a49:17aa:3f19 rev 1, Mem @ 0x601e000000/16777216, 0x4000000000/268435456, I/O @ 0x00004000/64, BIOS @ 0x????????/131072
+[     5.799] (II) LoadModule: "glx"
+[     5.800] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[     5.803] (II) Module glx: vendor="X.Org Foundation"
+[     5.803] 	compiled for 1.20.13, module version = 1.0.0
+[     5.803] 	ABI class: X.Org Server Extension, version 10.0
+[     5.803] (==) Matched modesetting as autoconfigured driver 0
+[     5.803] (==) Matched fbdev as autoconfigured driver 1
+[     5.803] (==) Matched vesa as autoconfigured driver 2
+[     5.803] (==) Assigned the driver to the xf86ConfigLayout
+[     5.803] (II) LoadModule: "modesetting"
+[     5.803] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[     5.804] (II) Module modesetting: vendor="X.Org Foundation"
+[     5.804] 	compiled for 1.20.13, module version = 1.20.13
+[     5.804] 	Module class: X.Org Video Driver
+[     5.804] 	ABI class: X.Org Video Driver, version 24.1
+[     5.804] (II) LoadModule: "fbdev"
+[     5.804] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[     5.804] (II) Module fbdev: vendor="X.Org Foundation"
+[     5.804] 	compiled for 1.20.1, module version = 0.5.0
+[     5.804] 	Module class: X.Org Video Driver
+[     5.804] 	ABI class: X.Org Video Driver, version 24.0
+[     5.804] (II) LoadModule: "vesa"
+[     5.805] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[     5.805] (II) Module vesa: vendor="X.Org Foundation"
+[     5.805] 	compiled for 1.20.4, module version = 2.4.0
+[     5.805] 	Module class: X.Org Video Driver
+[     5.805] 	ABI class: X.Org Video Driver, version 24.0
+[     5.805] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[     5.805] (II) FBDEV: driver for framebuffer: fbdev
+[     5.805] (II) VESA: driver for VESA chipsets: vesa
+[     5.805] xf86EnableIOPorts: failed to set IOPL for I/O (Operation not permitted)
+[     5.805] (II) modeset(0): using drv /dev/dri/card0
+[     5.805] (WW) Falling back to old probe method for fbdev
+[     5.805] (II) Loading sub module "fbdevhw"
+[     5.805] (II) LoadModule: "fbdevhw"
+[     5.805] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[     5.806] (II) Module fbdevhw: vendor="X.Org Foundation"
+[     5.806] 	compiled for 1.20.13, module version = 0.0.2
+[     5.806] 	ABI class: X.Org Video Driver, version 24.1
+[     5.806] (EE) open /dev/fb0: Permission denied
+[     5.806] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[     5.806] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[     5.806] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[     5.806] (==) modeset(0): RGB weight 888
+[     5.806] (==) modeset(0): Default visual is TrueColor
+[     5.806] (II) Loading sub module "glamoregl"
+[     5.806] (II) LoadModule: "glamoregl"
+[     5.806] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[     5.810] (II) Module glamoregl: vendor="X.Org Foundation"
+[     5.810] 	compiled for 1.20.13, module version = 1.0.1
+[     5.810] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     5.905] (II) modeset(0): glamor X acceleration enabled on Mesa Intel(R) Xe Graphics (TGL GT2)
+[     5.905] (II) modeset(0): glamor initialized
+[     5.906] (II) modeset(0): Output eDP-1 has no monitor section
+[     5.906] (II) modeset(0): Output HDMI-1 has no monitor section
+[     5.907] (II) modeset(0): Output DP-1 has no monitor section
+[     5.907] (II) modeset(0): Output DP-2 has no monitor section
+[     5.908] (II) modeset(0): EDID for output eDP-1
+[     5.908] (II) modeset(0): Manufacturer: CMN  Model: 15e7  Serial#: 0
+[     5.908] (II) modeset(0): Year: 2020  Week: 42
+[     5.908] (II) modeset(0): EDID Version: 1.4
+[     5.908] (II) modeset(0): Digital Display Input
+[     5.908] (II) modeset(0): 8 bits per channel
+[     5.908] (II) modeset(0): Digital interface is DisplayPort
+[     5.908] (II) modeset(0): Max Image Size [cm]: horiz.: 34  vert.: 19
+[     5.908] (II) modeset(0): Gamma: 2.20
+[     5.908] (II) modeset(0): No DPMS capabilities specified
+[     5.908] (II) modeset(0): Supported color encodings: RGB 4:4:4 
+[     5.908] (II) modeset(0): First detailed timing is preferred mode
+[     5.908] (II) modeset(0): Preferred mode is native pixel format and refresh rate
+[     5.908] (II) modeset(0): redX: 0.590 redY: 0.350   greenX: 0.330 greenY: 0.555
+[     5.908] (II) modeset(0): blueX: 0.153 blueY: 0.119   whiteX: 0.313 whiteY: 0.329
+[     5.908] (II) modeset(0): Manufacturer's mask: 0
+[     5.908] (II) modeset(0): Supported detailed timing:
+[     5.908] (II) modeset(0): clock: 152.8 MHz   Image Size:  344 x 193 mm
+[     5.908] (II) modeset(0): h_active: 1920  h_sync: 2000  h_sync_end 2054 h_blank_end 2250 h_border: 0
+[     5.908] (II) modeset(0): v_active: 1080  v_sync: 1086  v_sync_end 1094 v_blanking: 1132 v_border: 0
+[     5.908] (II) modeset(0):  N156HCA-EAB
+[     5.908] (II) modeset(0):  CMN
+[     5.908] (II) modeset(0):  N156HCA-EAB
+[     5.908] (II) modeset(0): EDID (in hex):
+[     5.908] (II) modeset(0): 	00ffffffffffff000daee71500000000
+[     5.908] (II) modeset(0): 	2a1e0104a52213780228659759548e27
+[     5.908] (II) modeset(0): 	1e505400000001010101010101010101
+[     5.908] (II) modeset(0): 	010101010101b43b804a713834405036
+[     5.908] (II) modeset(0): 	680058c110000018000000fe004e3135
+[     5.908] (II) modeset(0): 	364843412d4541420a20000000fe0043
+[     5.908] (II) modeset(0): 	4d4e0a202020202020202020000000fe
+[     5.908] (II) modeset(0): 	004e3135364843412d4541420a2000a5
+[     5.908] (II) modeset(0): Printing probed modes for output eDP-1
+[     5.908] (II) modeset(0): Modeline "1920x1080"x60.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[     5.908] (II) modeset(0): Modeline "1920x1080"x120.0  356.38  1920 2080 2288 2656  1080 1081 1084 1118 doublescan -hsync +vsync (134.2 kHz d)
+[     5.908] (II) modeset(0): Modeline "1920x1080"x119.9  266.50  1920 1944 1960 2000  1080 1081 1084 1111 doublescan +hsync -vsync (133.2 kHz d)
+[     5.908] (II) modeset(0): Modeline "1920x1080"x60.0  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync (67.2 kHz d)
+[     5.908] (II) modeset(0): Modeline "1920x1080"x59.9  138.50  1920 1968 2000 2080  1080 1083 1088 1111 +hsync -vsync (66.6 kHz d)
+[     5.908] (II) modeset(0): Modeline "1680x1050"x60.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz d)
+[     5.908] (II) modeset(0): Modeline "1680x1050"x59.9  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz d)
+[     5.908] (II) modeset(0): Modeline "1600x1024"x60.2  103.12  1600 1600 1656 1664  1024 1024 1029 1030 +hsync +vsync (62.0 kHz d)
+[     5.908] (II) modeset(0): Modeline "1400x1050"x60.0  122.00  1400 1488 1640 1880  1050 1052 1064 1082 +hsync +vsync (64.9 kHz d)
+[     5.908] (II) modeset(0): Modeline "1600x900"x120.0  246.00  1600 1728 1900 2200  900 901 904 932 doublescan -hsync +vsync (111.8 kHz d)
+[     5.908] (II) modeset(0): Modeline "1600x900"x119.9  186.50  1600 1624 1640 1680  900 901 904 926 doublescan +hsync -vsync (111.0 kHz d)
+[     5.908] (II) modeset(0): Modeline "1600x900"x59.9  118.25  1600 1696 1856 2112  900 903 908 934 -hsync +vsync (56.0 kHz d)
+[     5.908] (II) modeset(0): Modeline "1600x900"x59.8   97.50  1600 1648 1680 1760  900 903 908 926 +hsync -vsync (55.4 kHz d)
+[     5.908] (II) modeset(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz d)
+[     5.908] (II) modeset(0): Modeline "1440x900"x59.9  106.50  1440 1520 1672 1904  900 903 909 934 -hsync +vsync (55.9 kHz d)
+[     5.908] (II) modeset(0): Modeline "1400x900"x60.0  103.50  1400 1480 1624 1848  900 903 913 934 -hsync +vsync (56.0 kHz d)
+[     5.908] (II) modeset(0): Modeline "1400x900"x59.9   86.50  1400 1448 1480 1560  900 903 913 926 +hsync -vsync (55.4 kHz d)
+[     5.908] (II) modeset(0): Modeline "1280x960"x60.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz d)
+[     5.908] (II) modeset(0): Modeline "1440x810"x120.0  198.12  1440 1548 1704 1968  810 811 814 839 doublescan -hsync +vsync (100.7 kHz d)
+[     5.908] (II) modeset(0): Modeline "1440x810"x119.9  151.88  1440 1464 1480 1520  810 811 814 833 doublescan +hsync -vsync (99.9 kHz d)
+[     5.908] (II) modeset(0): Modeline "1368x768"x59.9   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync (47.8 kHz d)
+[     5.908] (II) modeset(0): Modeline "1368x768"x59.9   72.25  1368 1416 1448 1528  768 771 781 790 +hsync -vsync (47.3 kHz d)
+[     5.908] (II) modeset(0): Modeline "1360x768"x59.8   84.75  1360 1432 1568 1776  768 771 781 798 -hsync +vsync (47.7 kHz d)
+[     5.908] (II) modeset(0): Modeline "1360x768"x60.0   72.00  1360 1408 1440 1520  768 771 781 790 +hsync -vsync (47.4 kHz d)
+[     5.908] (II) modeset(0): Modeline "1280x800"x120.0  174.25  1280 1380 1516 1752  800 801 804 829 doublescan -hsync +vsync (99.5 kHz d)
+[     5.908] (II) modeset(0): Modeline "1280x800"x119.9  134.25  1280 1304 1320 1360  800 801 804 823 doublescan +hsync -vsync (98.7 kHz d)
+[     5.908] (II) modeset(0): Modeline "1280x800"x59.8   83.50  1280 1352 1480 1680  800 803 809 831 -hsync +vsync (49.7 kHz d)
+[     5.908] (II) modeset(0): Modeline "1280x800"x59.9   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz d)
+[     5.908] (II) modeset(0): Modeline "1152x864"x60.0   81.62  1152 1216 1336 1520  864 865 868 895 -hsync +vsync (53.7 kHz d)
+[     5.908] (II) modeset(0): Modeline "1280x720"x120.0  156.12  1280 1376 1512 1744  720 721 724 746 doublescan -hsync +vsync (89.5 kHz d)
+[     5.909] (II) modeset(0): Modeline "1280x720"x120.0  120.75  1280 1304 1320 1360  720 721 724 740 doublescan +hsync -vsync (88.8 kHz d)
+[     5.909] (II) modeset(0): Modeline "1280x720"x59.9   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync (44.8 kHz d)
+[     5.909] (II) modeset(0): Modeline "1280x720"x59.7   63.75  1280 1328 1360 1440  720 723 728 741 +hsync -vsync (44.3 kHz d)
+[     5.909] (II) modeset(0): Modeline "1024x768"x120.1  133.47  1024 1100 1212 1400  768 768 770 794 doublescan -hsync +vsync (95.3 kHz d)
+[     5.909] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz d)
+[     5.909] (II) modeset(0): Modeline "960x720"x120.0  117.00  960 1024 1128 1300  720 720 722 750 doublescan -hsync +vsync (90.0 kHz d)
+[     5.909] (II) modeset(0): Modeline "928x696"x120.1  109.15  928 976 1088 1264  696 696 698 719 doublescan -hsync +vsync (86.4 kHz d)
+[     5.909] (II) modeset(0): Modeline "896x672"x120.0  102.40  896 960 1060 1224  672 672 674 697 doublescan -hsync +vsync (83.7 kHz d)
+[     5.909] (II) modeset(0): Modeline "1024x576"x119.9   98.50  1024 1092 1200 1376  576 577 580 597 doublescan -hsync +vsync (71.6 kHz d)
+[     5.909] (II) modeset(0): Modeline "1024x576"x119.9   78.38  1024 1048 1064 1104  576 577 580 592 doublescan +hsync -vsync (71.0 kHz d)
+[     5.909] (II) modeset(0): Modeline "1024x576"x59.9   46.50  1024 1064 1160 1296  576 579 584 599 -hsync +vsync (35.9 kHz d)
+[     5.909] (II) modeset(0): Modeline "1024x576"x59.8   42.00  1024 1072 1104 1184  576 579 584 593 +hsync -vsync (35.5 kHz d)
+[     5.909] (II) modeset(0): Modeline "960x600"x119.9   96.62  960 1028 1128 1296  600 601 604 622 doublescan -hsync +vsync (74.6 kHz d)
+[     5.909] (II) modeset(0): Modeline "960x600"x120.0   77.00  960 984 1000 1040  600 601 604 617 doublescan +hsync -vsync (74.0 kHz d)
+[     5.909] (II) modeset(0): Modeline "960x540"x119.9   86.50  960 1024 1124 1288  540 541 544 560 doublescan -hsync +vsync (67.2 kHz d)
+[     5.909] (II) modeset(0): Modeline "960x540"x120.0   69.25  960 984 1000 1040  540 541 544 555 doublescan +hsync -vsync (66.6 kHz d)
+[     5.909] (II) modeset(0): Modeline "960x540"x59.6   40.75  960 992 1088 1216  540 543 548 562 -hsync +vsync (33.5 kHz d)
+[     5.909] (II) modeset(0): Modeline "960x540"x59.8   37.25  960 1008 1040 1120  540 543 548 556 +hsync -vsync (33.3 kHz d)
+[     5.909] (II) modeset(0): Modeline "800x600"x120.0   81.00  800 832 928 1080  600 600 602 625 doublescan +hsync +vsync (75.0 kHz d)
+[     5.909] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz d)
+[     5.909] (II) modeset(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz d)
+[     5.909] (II) modeset(0): Modeline "840x525"x120.0   73.12  840 892 980 1120  525 526 529 544 doublescan -hsync +vsync (65.3 kHz d)
+[     5.909] (II) modeset(0): Modeline "840x525"x119.8   59.50  840 864 880 920  525 526 529 540 doublescan +hsync -vsync (64.7 kHz d)
+[     5.909] (II) modeset(0): Modeline "864x486"x59.9   32.50  864 888 968 1072  486 489 494 506 -hsync +vsync (30.3 kHz d)
+[     5.909] (II) modeset(0): Modeline "864x486"x59.6   30.50  864 912 944 1024  486 489 494 500 +hsync -vsync (29.8 kHz d)
+[     5.909] (II) modeset(0): Modeline "800x512"x120.3   51.56  800 800 828 832  512 512 514 515 doublescan +hsync +vsync (62.0 kHz d)
+[     5.909] (II) modeset(0): Modeline "700x525"x120.0   61.00  700 744 820 940  525 526 532 541 doublescan +hsync +vsync (64.9 kHz d)
+[     5.909] (II) modeset(0): Modeline "800x450"x119.9   59.12  800 848 928 1056  450 451 454 467 doublescan -hsync +vsync (56.0 kHz d)
+[     5.909] (II) modeset(0): Modeline "800x450"x119.6   48.75  800 824 840 880  450 451 454 463 doublescan +hsync -vsync (55.4 kHz d)
+[     5.909] (II) modeset(0): Modeline "640x512"x120.0   54.00  640 664 720 844  512 512 514 533 doublescan +hsync +vsync (64.0 kHz d)
+[     5.909] (II) modeset(0): Modeline "720x450"x119.8   53.25  720 760 836 952  450 451 454 467 doublescan -hsync +vsync (55.9 kHz d)
+[     5.909] (II) modeset(0): Modeline "700x450"x119.9   51.75  700 740 812 924  450 451 456 467 doublescan -hsync +vsync (56.0 kHz d)
+[     5.909] (II) modeset(0): Modeline "700x450"x119.8   43.25  700 724 740 780  450 451 456 463 doublescan +hsync -vsync (55.4 kHz d)
+[     5.909] (II) modeset(0): Modeline "640x480"x120.0   54.00  640 688 744 900  480 480 482 500 doublescan +hsync +vsync (60.0 kHz d)
+[     5.909] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz d)
+[     5.909] (II) modeset(0): Modeline "720x405"x59.5   22.50  720 744 808 896  405 408 413 422 -hsync +vsync (25.1 kHz d)
+[     5.909] (II) modeset(0): Modeline "720x405"x59.0   21.75  720 768 800 880  405 408 413 419 +hsync -vsync (24.7 kHz d)
+[     5.909] (II) modeset(0): Modeline "684x384"x119.8   42.62  684 720 788 892  384 385 390 399 doublescan -hsync +vsync (47.8 kHz d)
+[     5.909] (II) modeset(0): Modeline "684x384"x119.7   36.12  684 708 724 764  384 385 390 395 doublescan +hsync -vsync (47.3 kHz d)
+[     5.909] (II) modeset(0): Modeline "680x384"x119.6   42.38  680 716 784 888  384 385 390 399 doublescan -hsync +vsync (47.7 kHz d)
+[     5.909] (II) modeset(0): Modeline "680x384"x119.9   36.00  680 704 720 760  384 385 390 395 doublescan +hsync -vsync (47.4 kHz d)
+[     5.909] (II) modeset(0): Modeline "640x400"x119.8   41.75  640 676 740 840  400 401 404 415 doublescan -hsync +vsync (49.7 kHz d)
+[     5.909] (II) modeset(0): Modeline "640x400"x120.0   35.50  640 664 680 720  400 401 404 411 doublescan +hsync -vsync (49.3 kHz d)
+[     5.909] (II) modeset(0): Modeline "576x432"x120.1   40.81  576 608 668 760  432 432 434 447 doublescan -hsync +vsync (53.7 kHz d)
+[     5.909] (II) modeset(0): Modeline "640x360"x119.7   37.25  640 672 736 832  360 361 364 374 doublescan -hsync +vsync (44.8 kHz d)
+[     5.909] (II) modeset(0): Modeline "640x360"x119.7   31.88  640 664 680 720  360 361 364 370 doublescan +hsync -vsync (44.3 kHz d)
+[     5.909] (II) modeset(0): Modeline "640x360"x59.8   18.00  640 664 720 800  360 363 368 376 -hsync +vsync (22.5 kHz d)
+[     5.909] (II) modeset(0): Modeline "640x360"x59.3   17.75  640 688 720 800  360 363 368 374 +hsync -vsync (22.2 kHz d)
+[     5.909] (II) modeset(0): Modeline "512x384"x120.0   32.50  512 524 592 672  384 385 388 403 doublescan -hsync -vsync (48.4 kHz d)
+[     5.909] (II) modeset(0): Modeline "512x288"x120.0   23.25  512 532 580 648  288 289 292 299 doublescan -hsync +vsync (35.9 kHz d)
+[     5.909] (II) modeset(0): Modeline "512x288"x119.8   21.00  512 536 552 592  288 289 292 296 doublescan +hsync -vsync (35.5 kHz d)
+[     5.909] (II) modeset(0): Modeline "480x270"x119.3   20.38  480 496 544 608  270 271 274 281 doublescan -hsync +vsync (33.5 kHz d)
+[     5.909] (II) modeset(0): Modeline "480x270"x119.6   18.62  480 504 520 560  270 271 274 278 doublescan +hsync -vsync (33.3 kHz d)
+[     5.909] (II) modeset(0): Modeline "400x300"x120.6   20.00  400 420 484 528  300 300 302 314 doublescan +hsync +vsync (37.9 kHz d)
+[     5.909] (II) modeset(0): Modeline "400x300"x112.7   18.00  400 412 448 512  300 300 301 312 doublescan +hsync +vsync (35.2 kHz d)
+[     5.909] (II) modeset(0): Modeline "432x243"x119.8   16.25  432 444 484 536  243 244 247 253 doublescan -hsync +vsync (30.3 kHz d)
+[     5.909] (II) modeset(0): Modeline "432x243"x119.1   15.25  432 456 472 512  243 244 247 250 doublescan +hsync -vsync (29.8 kHz d)
+[     5.909] (II) modeset(0): Modeline "320x240"x120.1   12.59  320 328 376 400  240 245 246 262 doublescan -hsync -vsync (31.5 kHz d)
+[     5.909] (II) modeset(0): Modeline "360x202"x119.0   11.25  360 372 404 448  202 204 206 211 doublescan -hsync +vsync (25.1 kHz d)
+[     5.909] (II) modeset(0): Modeline "360x202"x118.3   10.88  360 384 400 440  202 204 206 209 doublescan +hsync -vsync (24.7 kHz d)
+[     5.909] (II) modeset(0): Modeline "320x180"x119.7    9.00  320 332 360 400  180 181 184 188 doublescan -hsync +vsync (22.5 kHz d)
+[     5.909] (II) modeset(0): Modeline "320x180"x118.6    8.88  320 344 360 400  180 181 184 187 doublescan +hsync -vsync (22.2 kHz d)
+[     5.909] (II) modeset(0): EDID for output HDMI-1
+[     5.909] (II) modeset(0): EDID for output DP-1
+[     5.909] (II) modeset(0): EDID for output DP-2
+[     5.909] (II) modeset(0): Output eDP-1 connected
+[     5.909] (II) modeset(0): Output HDMI-1 disconnected
+[     5.909] (II) modeset(0): Output DP-1 disconnected
+[     5.909] (II) modeset(0): Output DP-2 disconnected
+[     5.909] (II) modeset(0): Using exact sizes for initial modes
+[     5.909] (II) modeset(0): Output eDP-1 using initial mode 1920x1080 +0+0
+[     5.909] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[     5.909] (==) modeset(0): DPI set to (96, 96)
+[     5.909] (II) Loading sub module "fb"
+[     5.909] (II) LoadModule: "fb"
+[     5.909] (II) Loading /usr/lib/xorg/modules/libfb.so
+[     5.910] (II) Module fb: vendor="X.Org Foundation"
+[     5.910] 	compiled for 1.20.13, module version = 1.0.0
+[     5.910] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     5.910] (II) UnloadModule: "fbdev"
+[     5.910] (II) Unloading fbdev
+[     5.910] (II) UnloadSubModule: "fbdevhw"
+[     5.910] (II) Unloading fbdevhw
+[     5.910] (II) UnloadModule: "vesa"
+[     5.910] (II) Unloading vesa
+[     5.933] (==) modeset(0): Backing store enabled
+[     5.933] (==) modeset(0): Silken mouse enabled
+[     6.004] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[     6.004] (==) modeset(0): DPMS enabled
+[     6.004] (II) modeset(0): [DRI2] Setup complete
+[     6.004] (II) modeset(0): [DRI2]   DRI driver: iris
+[     6.004] (II) modeset(0): [DRI2]   VDPAU driver: va_gl
+[     6.004] (II) Initializing extension Generic Event Extension
+[     6.004] (II) Initializing extension SHAPE
+[     6.004] (II) Initializing extension MIT-SHM
+[     6.004] (II) Initializing extension XInputExtension
+[     6.005] (II) Initializing extension XTEST
+[     6.005] (II) Initializing extension BIG-REQUESTS
+[     6.005] (II) Initializing extension SYNC
+[     6.005] (II) Initializing extension XKEYBOARD
+[     6.005] (II) Initializing extension XC-MISC
+[     6.005] (II) Initializing extension SECURITY
+[     6.005] (II) Initializing extension XFIXES
+[     6.005] (II) Initializing extension RENDER
+[     6.005] (II) Initializing extension RANDR
+[     6.005] (II) Initializing extension COMPOSITE
+[     6.006] (II) Initializing extension DAMAGE
+[     6.006] (II) Initializing extension MIT-SCREEN-SAVER
+[     6.006] (II) Initializing extension DOUBLE-BUFFER
+[     6.006] (II) Initializing extension RECORD
+[     6.006] (II) Initializing extension DPMS
+[     6.006] (II) Initializing extension Present
+[     6.006] (II) Initializing extension DRI3
+[     6.006] (II) Initializing extension X-Resource
+[     6.006] (II) Initializing extension XVideo
+[     6.006] (II) Initializing extension XVideo-MotionCompensation
+[     6.006] (II) Initializing extension SELinux
+[     6.006] (II) SELinux: Disabled on system
+[     6.006] (II) Initializing extension GLX
+[     6.012] (II) AIGLX: Loaded and initialized iris
+[     6.012] (II) GLX: Initialized DRI2 GL provider for screen 0
+[     6.012] (II) Initializing extension XFree86-VidModeExtension
+[     6.012] (II) Initializing extension XFree86-DGA
+[     6.012] (II) Initializing extension XFree86-DRI
+[     6.012] (II) Initializing extension DRI2
+[     6.012] (II) modeset(0): Damage tracking initialized
+[     6.012] (II) modeset(0): Setting screen physical size to 508 x 285
+[     6.042] (II) config/udev: Adding input device Video Bus (/dev/input/event8)
+[     6.042] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[     6.042] (II) LoadModule: "libinput"
+[     6.042] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[     6.045] (II) Module libinput: vendor="X.Org Foundation"
+[     6.045] 	compiled for 1.20.4, module version = 0.29.0
+[     6.045] 	Module class: X.Org XInput Driver
+[     6.045] 	ABI class: X.Org XInput driver, version 24.1
+[     6.045] (II) Using input driver 'libinput' for 'Video Bus'
+[     6.045] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 26 paused 0
+[     6.045] (**) Video Bus: always reports core events
+[     6.045] (**) Option "Device" "/dev/input/event8"
+[     6.045] (**) Option "_source" "server/udev"
+[     6.048] (II) event8  - Video Bus: is tagged by udev as: Keyboard
+[     6.048] (II) event8  - Video Bus: device is a keyboard
+[     6.048] (II) event8  - Video Bus: device removed
+[     6.048] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input21/event8"
+[     6.048] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 6)
+[     6.048] (**) Option "xkb_model" "pc105"
+[     6.048] (**) Option "xkb_layout" "us"
+[     6.049] (II) event8  - Video Bus: is tagged by udev as: Keyboard
+[     6.049] (II) event8  - Video Bus: device is a keyboard
+[     6.049] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[     6.049] (II) No input driver specified, ignoring this device.
+[     6.049] (II) This device may have been added with another device file.
+[     6.049] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[     6.049] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[     6.049] (II) Using input driver 'libinput' for 'Power Button'
+[     6.050] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 29 paused 0
+[     6.050] (**) Power Button: always reports core events
+[     6.050] (**) Option "Device" "/dev/input/event1"
+[     6.050] (**) Option "_source" "server/udev"
+[     6.050] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[     6.050] (II) event1  - Power Button: device is a keyboard
+[     6.050] (II) event1  - Power Button: device removed
+[     6.050] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[     6.050] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[     6.050] (**) Option "xkb_model" "pc105"
+[     6.050] (**) Option "xkb_layout" "us"
+[     6.051] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[     6.051] (II) event1  - Power Button: device is a keyboard
+[     6.051] (II) config/udev: Adding input device Logitech M510 (/dev/input/event5)
+[     6.051] (**) Logitech M510: Applying InputClass "libinput pointer catchall"
+[     6.051] (II) Using input driver 'libinput' for 'Logitech M510'
+[     6.052] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 30 paused 0
+[     6.052] (**) Logitech M510: always reports core events
+[     6.052] (**) Option "Device" "/dev/input/event5"
+[     6.052] (**) Option "_source" "server/udev"
+[     6.053] (II) event5  - Logitech M510: is tagged by udev as: Mouse
+[     6.053] (II) event5  - Logitech M510: device is a pointer
+[     6.053] (II) event5  - Logitech M510: device removed
+[     6.053] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb3/3-5/3-5:1.2/0003:046D:C52B.0004/0003:046D:4051.0005/input/input15/event5"
+[     6.053] (II) XINPUT: Adding extended input device "Logitech M510" (type: MOUSE, id 8)
+[     6.053] (**) Option "AccelerationScheme" "none"
+[     6.053] (**) Logitech M510: (accel) selected scheme none/0
+[     6.053] (**) Logitech M510: (accel) acceleration factor: 2.000
+[     6.053] (**) Logitech M510: (accel) acceleration threshold: 4
+[     6.054] (II) event5  - Logitech M510: is tagged by udev as: Mouse
+[     6.054] (II) event5  - Logitech M510: device is a pointer
+[     6.054] (II) config/udev: Adding input device Logitech M510 (/dev/input/mouse2)
+[     6.054] (II) No input driver specified, ignoring this device.
+[     6.054] (II) This device may have been added with another device file.
+[     6.055] (II) config/udev: Adding input device Integrated Camera: Integrated C (/dev/input/event7)
+[     6.055] (**) Integrated Camera: Integrated C: Applying InputClass "libinput keyboard catchall"
+[     6.055] (II) Using input driver 'libinput' for 'Integrated Camera: Integrated C'
+[     6.055] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 31 paused 0
+[     6.055] (**) Integrated Camera: Integrated C: always reports core events
+[     6.055] (**) Option "Device" "/dev/input/event7"
+[     6.055] (**) Option "_source" "server/udev"
+[     6.056] (II) event7  - Integrated Camera: Integrated C: is tagged by udev as: Keyboard
+[     6.056] (II) event7  - Integrated Camera: Integrated C: device is a keyboard
+[     6.056] (II) event7  - Integrated Camera: Integrated C: device removed
+[     6.056] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb3/3-7/3-7:1.0/input/input20/event7"
+[     6.056] (II) XINPUT: Adding extended input device "Integrated Camera: Integrated C" (type: KEYBOARD, id 9)
+[     6.056] (**) Option "xkb_model" "pc105"
+[     6.056] (**) Option "xkb_layout" "us"
+[     6.057] (II) event7  - Integrated Camera: Integrated C: is tagged by udev as: Keyboard
+[     6.057] (II) event7  - Integrated Camera: Integrated C: device is a keyboard
+[     6.057] (II) config/udev: Adding input device MSFT0001:01 06CB:CE2D Mouse (/dev/input/event3)
+[     6.057] (**) MSFT0001:01 06CB:CE2D Mouse: Applying InputClass "libinput pointer catchall"
+[     6.057] (II) Using input driver 'libinput' for 'MSFT0001:01 06CB:CE2D Mouse'
+[     6.058] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 32 paused 0
+[     6.058] (**) MSFT0001:01 06CB:CE2D Mouse: always reports core events
+[     6.058] (**) Option "Device" "/dev/input/event3"
+[     6.058] (**) Option "_source" "server/udev"
+[     6.058] (II) event3  - MSFT0001:01 06CB:CE2D Mouse: is tagged by udev as: Mouse Pointingstick
+[     6.058] (II) event3  - MSFT0001:01 06CB:CE2D Mouse: device is a pointer
+[     6.059] (II) event3  - MSFT0001:01 06CB:CE2D Mouse: device removed
+[     6.059] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-MSFT0001:01/0018:06CB:CE2D.0001/input/input17/event3"
+[     6.059] (II) XINPUT: Adding extended input device "MSFT0001:01 06CB:CE2D Mouse" (type: MOUSE, id 10)
+[     6.059] (**) Option "AccelerationScheme" "none"
+[     6.059] (**) MSFT0001:01 06CB:CE2D Mouse: (accel) selected scheme none/0
+[     6.059] (**) MSFT0001:01 06CB:CE2D Mouse: (accel) acceleration factor: 2.000
+[     6.059] (**) MSFT0001:01 06CB:CE2D Mouse: (accel) acceleration threshold: 4
+[     6.059] (II) event3  - MSFT0001:01 06CB:CE2D Mouse: is tagged by udev as: Mouse Pointingstick
+[     6.060] (II) event3  - MSFT0001:01 06CB:CE2D Mouse: device is a pointer
+[     6.060] (II) config/udev: Adding input device MSFT0001:01 06CB:CE2D Mouse (/dev/input/mouse0)
+[     6.060] (II) No input driver specified, ignoring this device.
+[     6.060] (II) This device may have been added with another device file.
+[     6.060] (II) config/udev: Adding input device MSFT0001:01 06CB:CE2D Touchpad (/dev/input/event4)
+[     6.060] (**) MSFT0001:01 06CB:CE2D Touchpad: Applying InputClass "libinput touchpad catchall"
+[     6.060] (II) Using input driver 'libinput' for 'MSFT0001:01 06CB:CE2D Touchpad'
+[     6.061] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 33 paused 0
+[     6.061] (**) MSFT0001:01 06CB:CE2D Touchpad: always reports core events
+[     6.061] (**) Option "Device" "/dev/input/event4"
+[     6.061] (**) Option "_source" "server/udev"
+[     6.061] (II) event4  - MSFT0001:01 06CB:CE2D Touchpad: is tagged by udev as: Touchpad
+[     6.062] (II) event4  - MSFT0001:01 06CB:CE2D Touchpad: device is a touchpad
+[     6.062] (II) event4  - MSFT0001:01 06CB:CE2D Touchpad: device removed
+[     6.062] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-MSFT0001:01/0018:06CB:CE2D.0001/input/input18/event4"
+[     6.062] (II) XINPUT: Adding extended input device "MSFT0001:01 06CB:CE2D Touchpad" (type: TOUCHPAD, id 11)
+[     6.063] (**) Option "AccelerationScheme" "none"
+[     6.063] (**) MSFT0001:01 06CB:CE2D Touchpad: (accel) selected scheme none/0
+[     6.063] (**) MSFT0001:01 06CB:CE2D Touchpad: (accel) acceleration factor: 2.000
+[     6.063] (**) MSFT0001:01 06CB:CE2D Touchpad: (accel) acceleration threshold: 4
+[     6.063] (II) event4  - MSFT0001:01 06CB:CE2D Touchpad: is tagged by udev as: Touchpad
+[     6.064] (II) event4  - MSFT0001:01 06CB:CE2D Touchpad: device is a touchpad
+[     6.064] (II) config/udev: Adding input device MSFT0001:01 06CB:CE2D Touchpad (/dev/input/mouse1)
+[     6.064] (II) No input driver specified, ignoring this device.
+[     6.064] (II) This device may have been added with another device file.
+[     6.065] (II) config/udev: Adding input device Ideapad extra buttons (/dev/input/event6)
+[     6.065] (**) Ideapad extra buttons: Applying InputClass "libinput keyboard catchall"
+[     6.065] (II) Using input driver 'libinput' for 'Ideapad extra buttons'
+[     6.065] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 34 paused 0
+[     6.065] (**) Ideapad extra buttons: always reports core events
+[     6.065] (**) Option "Device" "/dev/input/event6"
+[     6.065] (**) Option "_source" "server/udev"
+[     6.066] (II) event6  - Ideapad extra buttons: is tagged by udev as: Keyboard
+[     6.066] (II) event6  - Ideapad extra buttons: device is a keyboard
+[     6.066] (II) event6  - Ideapad extra buttons: device removed
+[     6.066] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1f.0/PNP0C09:00/VPC2004:00/input/input16/event6"
+[     6.066] (II) XINPUT: Adding extended input device "Ideapad extra buttons" (type: KEYBOARD, id 12)
+[     6.066] (**) Option "xkb_model" "pc105"
+[     6.066] (**) Option "xkb_layout" "us"
+[     6.066] (II) event6  - Ideapad extra buttons: is tagged by udev as: Keyboard
+[     6.066] (II) event6  - Ideapad extra buttons: device is a keyboard
+[     6.067] (II) config/udev: Adding input device sof-hda-dsp Mic (/dev/input/event9)
+[     6.067] (II) No input driver specified, ignoring this device.
+[     6.067] (II) This device may have been added with another device file.
+[     6.067] (II) config/udev: Adding input device sof-hda-dsp Headphone (/dev/input/event10)
+[     6.067] (II) No input driver specified, ignoring this device.
+[     6.067] (II) This device may have been added with another device file.
+[     6.067] (II) config/udev: Adding input device sof-hda-dsp HDMI/DP,pcm=3 (/dev/input/event11)
+[     6.067] (II) No input driver specified, ignoring this device.
+[     6.067] (II) This device may have been added with another device file.
+[     6.067] (II) config/udev: Adding input device sof-hda-dsp HDMI/DP,pcm=4 (/dev/input/event12)
+[     6.067] (II) No input driver specified, ignoring this device.
+[     6.067] (II) This device may have been added with another device file.
+[     6.067] (II) config/udev: Adding input device sof-hda-dsp HDMI/DP,pcm=5 (/dev/input/event13)
+[     6.067] (II) No input driver specified, ignoring this device.
+[     6.067] (II) This device may have been added with another device file.
+[     6.068] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event2)
+[     6.068] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[     6.068] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[     6.068] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 35 paused 0
+[     6.068] (**) AT Translated Set 2 keyboard: always reports core events
+[     6.068] (**) Option "Device" "/dev/input/event2"
+[     6.068] (**) Option "_source" "server/udev"
+[     6.069] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[     6.069] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[     6.069] (II) event2  - AT Translated Set 2 keyboard: device removed
+[     6.069] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input2/event2"
+[     6.069] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 13)
+[     6.069] (**) Option "xkb_model" "pc105"
+[     6.069] (**) Option "xkb_layout" "us"
+[     6.070] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[     6.070] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[     6.492] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[     6.492] (II) modeset(0): Printing DDC gathered Modelines:
+[     6.492] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[     7.397] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[     7.397] (II) modeset(0): Printing DDC gathered Modelines:
+[     7.397] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[  1547.557] (II) modeset(0): Output DP-2-1 has no monitor section
+[  1547.559] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[  1547.559] (II) modeset(0): Printing DDC gathered Modelines:
+[  1547.559] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[  1548.366] (II) modeset(0): Output DP-2-2 has no monitor section
+[  1548.368] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[  1548.369] (II) modeset(0): Printing DDC gathered Modelines:
+[  1548.369] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[  1549.435] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[  1549.435] (II) modeset(0): Printing DDC gathered Modelines:
+[  1549.435] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[  1549.934] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[  1549.934] (II) modeset(0): Printing DDC gathered Modelines:
+[  1549.934] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[  1550.453] (II) modeset(0): Allocate new frame buffer 5760x1080 stride
+[  1552.741] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[  1552.741] (II) modeset(0): Printing DDC gathered Modelines:
+[  1552.741] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[  1638.272] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[  1638.272] (II) modeset(0): Using hsync ranges from config file
+[  1638.272] (II) modeset(0): Using vrefresh ranges from config file
+[  1638.272] (II) modeset(0): Printing DDC gathered Modelines:
+[  1638.272] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[  1638.272] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[  1638.272] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  1638.272] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  1638.272] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  1638.273] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[  1638.273] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[  1638.273] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[  1638.273] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  1638.273] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[  1638.273] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[  1638.273] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[  1638.273] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[  1638.273] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  1638.273] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[  1638.273] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[  1638.273] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[  1638.273] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[  1638.273] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[  1638.273] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[  1638.273] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[  1638.273] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[  1692.541] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[  1692.541] (II) modeset(0): Using hsync ranges from config file
+[  1692.541] (II) modeset(0): Using vrefresh ranges from config file
+[  1692.541] (II) modeset(0): Printing DDC gathered Modelines:
+[  1692.541] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[  1692.541] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[  1692.541] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  1692.541] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  1692.541] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  1692.541] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[  1692.541] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[  1692.541] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[  1692.541] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  1692.541] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[  1692.541] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[  1692.541] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[  1692.541] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[  1692.541] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  1692.541] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[  1692.541] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[  1692.541] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[  1692.541] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[  1692.541] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[  1692.541] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[  1692.541] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[  1692.541] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[  1693.150] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[  1693.150] (II) modeset(0): Using hsync ranges from config file
+[  1693.150] (II) modeset(0): Using vrefresh ranges from config file
+[  1693.150] (II) modeset(0): Printing DDC gathered Modelines:
+[  1693.150] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[  1693.150] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[  1693.150] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  1693.150] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  1693.150] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  1693.150] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[  1693.150] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[  1693.150] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[  1693.150] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  1693.150] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[  1693.150] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[  1693.150] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[  1693.150] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[  1693.150] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  1693.150] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[  1693.150] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[  1693.150] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[  1693.150] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[  1693.150] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[  1693.151] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[  1693.151] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[  1693.151] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[  5356.801] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[  5356.801] (II) modeset(0): Using hsync ranges from config file
+[  5356.801] (II) modeset(0): Using vrefresh ranges from config file
+[  5356.801] (II) modeset(0): Printing DDC gathered Modelines:
+[  5356.801] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[  5356.801] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[  5356.801] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  5356.801] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  5356.801] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  5356.801] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[  5356.801] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[  5356.801] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[  5356.802] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  5356.802] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[  5356.802] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[  5356.802] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[  5356.802] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[  5356.802] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  5356.802] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[  5356.802] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[  5356.802] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[  5356.802] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[  5356.802] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[  5356.802] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[  5356.802] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[  5356.802] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[  5357.382] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[  5357.383] (II) modeset(0): Using hsync ranges from config file
+[  5357.383] (II) modeset(0): Using vrefresh ranges from config file
+[  5357.383] (II) modeset(0): Printing DDC gathered Modelines:
+[  5357.383] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[  5357.383] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[  5357.383] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  5357.383] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  5357.383] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  5357.383] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[  5357.383] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[  5357.383] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[  5357.383] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  5357.383] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[  5357.383] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[  5357.383] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[  5357.383] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[  5357.383] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  5357.383] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[  5357.383] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[  5357.383] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[  5357.383] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[  5357.383] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[  5357.383] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[  5357.383] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[  5357.383] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 11002.163] (II) modeset(0): Allocate new frame buffer 3840x1080 stride
+[ 11003.089] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 11003.090] (II) modeset(0): Using hsync ranges from config file
+[ 11003.090] (II) modeset(0): Using vrefresh ranges from config file
+[ 11003.090] (II) modeset(0): Printing DDC gathered Modelines:
+[ 11003.090] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 11003.090] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 11003.090] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 38496.146] (II) modeset(0): Allocate new frame buffer 5760x1080 stride
+[ 38497.274] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 38497.274] (II) modeset(0): Using hsync ranges from config file
+[ 38497.274] (II) modeset(0): Using vrefresh ranges from config file
+[ 38497.274] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38497.274] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 38497.274] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 38497.274] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 38497.274] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 38497.274] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 38497.274] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 38497.274] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 38497.274] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 38497.274] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 38497.274] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 38497.274] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 38497.275] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 38497.275] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 38497.275] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 38497.275] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 38497.275] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 38497.275] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 38497.275] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 38497.275] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 38497.275] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 38497.275] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 38497.275] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 38523.471] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 38523.471] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38523.471] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 38523.474] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 38523.475] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38523.475] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 38524.571] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 38524.571] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38524.571] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 38530.642] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 38530.642] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38530.642] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 38530.663] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 38530.663] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38530.663] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 38530.927] (II) modeset(0): Allocate new frame buffer 1920x1080 stride
+[ 38531.609] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 38531.609] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38531.609] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 38532.612] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 38532.612] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38532.612] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 38535.176] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 38535.176] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38535.176] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 38536.180] (II) modeset(0): Allocate new frame buffer 5760x1080 stride
+[ 38540.444] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 38540.444] (II) modeset(0): Using hsync ranges from config file
+[ 38540.444] (II) modeset(0): Using vrefresh ranges from config file
+[ 38540.444] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38540.444] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 38540.444] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 38540.444] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 38540.445] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 38541.021] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 38541.021] (II) modeset(0): Using hsync ranges from config file
+[ 38541.021] (II) modeset(0): Using vrefresh ranges from config file
+[ 38541.021] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38541.021] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 38541.021] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 38541.021] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 38543.847] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 38543.848] (II) modeset(0): Using hsync ranges from config file
+[ 38543.848] (II) modeset(0): Using vrefresh ranges from config file
+[ 38543.848] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38543.848] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 38543.848] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 38543.848] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 38544.663] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 38544.663] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38544.663] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 38546.465] (II) modeset(0): Allocate new frame buffer 3840x1080 stride
+[ 38546.630] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 38546.630] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38546.630] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 38579.679] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 38579.679] (II) modeset(0): Using hsync ranges from config file
+[ 38579.679] (II) modeset(0): Using vrefresh ranges from config file
+[ 38579.679] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38579.679] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 38579.679] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 38579.679] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 38580.255] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 38580.255] (II) modeset(0): Using hsync ranges from config file
+[ 38580.255] (II) modeset(0): Using vrefresh ranges from config file
+[ 38580.255] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38580.255] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 38580.255] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 38580.255] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 38580.736] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 38580.737] (II) modeset(0): Using hsync ranges from config file
+[ 38580.737] (II) modeset(0): Using vrefresh ranges from config file
+[ 38580.737] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38580.737] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 38580.737] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 38580.737] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 38581.650] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 38581.650] (II) modeset(0): Using hsync ranges from config file
+[ 38581.650] (II) modeset(0): Using vrefresh ranges from config file
+[ 38581.650] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38581.650] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 38581.650] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 38581.650] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 38582.857] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 38582.857] (II) modeset(0): Using hsync ranges from config file
+[ 38582.857] (II) modeset(0): Using vrefresh ranges from config file
+[ 38582.857] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38582.857] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 38582.857] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 38582.857] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 38583.195] (II) modeset(0): Allocate new frame buffer 5760x1080 stride
+[ 38584.268] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 38584.269] (II) modeset(0): Using hsync ranges from config file
+[ 38584.269] (II) modeset(0): Using vrefresh ranges from config file
+[ 38584.269] (II) modeset(0): Printing DDC gathered Modelines:
+[ 38584.269] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 38584.269] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 38584.269] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 39845.340] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 39845.340] (II) modeset(0): Printing DDC gathered Modelines:
+[ 39845.340] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 39846.474] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 39846.474] (II) modeset(0): Printing DDC gathered Modelines:
+[ 39846.474] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 39846.476] (WW) modeset(0): flip queue failed: Invalid argument
+[ 39846.476] (WW) modeset(0): Page flip failed: Invalid argument
+[ 39846.483] (EE) modeset(0): failed to set mode: Invalid argument
+[ 39846.483] (II) modeset(0): Allocate new frame buffer 3840x1080 stride
+[ 39846.492] (EE) modeset(0): failed to set mode: Invalid argument
+[ 39846.586] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 39846.586] (II) modeset(0): Printing DDC gathered Modelines:
+[ 39846.586] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 39856.927] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 39856.927] (II) modeset(0): Printing DDC gathered Modelines:
+[ 39856.927] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 39856.929] (II) modeset(0): Allocate new frame buffer 1920x1080 stride
+[ 39857.024] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 39857.024] (II) modeset(0): Printing DDC gathered Modelines:
+[ 39857.024] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 40228.222] (EE) client bug: timer event5 debounce: scheduled expiry is in the past (-109ms), your system is too slow
+[ 40228.222] (EE) client bug: timer event5 debounce short: scheduled expiry is in the past (-122ms), your system is too slow
+[ 57147.354] (II) modeset(0): Output DP-1-1 has no monitor section
+[ 57147.582] (II) modeset(0): Output DP-1-2 has no monitor section
+[ 57147.585] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 57147.585] (II) modeset(0): Printing DDC gathered Modelines:
+[ 57147.585] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 57148.549] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 57148.549] (II) modeset(0): Printing DDC gathered Modelines:
+[ 57148.549] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 57149.062] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 57149.063] (II) modeset(0): Printing DDC gathered Modelines:
+[ 57149.063] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 57149.591] (II) modeset(0): Allocate new frame buffer 3840x1080 stride
+[ 57151.285] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 57151.285] (II) modeset(0): Printing DDC gathered Modelines:
+[ 57151.285] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 57592.306] (II) modeset(0): Allocate new frame buffer 5760x1080 stride
+[ 57594.431] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 57594.431] (II) modeset(0): Using hsync ranges from config file
+[ 57594.431] (II) modeset(0): Using vrefresh ranges from config file
+[ 57594.431] (II) modeset(0): Printing DDC gathered Modelines:
+[ 57594.431] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 57594.431] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 57594.431] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 57594.431] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 57594.431] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 57594.431] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 57594.431] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 57594.431] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 57594.431] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 57594.431] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 57594.431] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 57594.431] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 57594.431] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 57594.432] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 57594.432] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 57594.432] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 57594.432] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 57594.432] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 57594.432] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 57594.432] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 57594.432] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 57594.432] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 57632.306] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 57632.306] (II) modeset(0): Using hsync ranges from config file
+[ 57632.307] (II) modeset(0): Using vrefresh ranges from config file
+[ 57632.307] (II) modeset(0): Printing DDC gathered Modelines:
+[ 57632.307] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 57632.307] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 57632.307] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 57652.528] (II) modeset(0): Allocate new frame buffer 5760x1664 stride
+[ 57653.474] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 57653.474] (II) modeset(0): Using hsync ranges from config file
+[ 57653.474] (II) modeset(0): Using vrefresh ranges from config file
+[ 57653.474] (II) modeset(0): Printing DDC gathered Modelines:
+[ 57653.474] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 57653.474] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 57653.474] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 57654.118] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 57654.118] (II) modeset(0): Using hsync ranges from config file
+[ 57654.118] (II) modeset(0): Using vrefresh ranges from config file
+[ 57654.118] (II) modeset(0): Printing DDC gathered Modelines:
+[ 57654.118] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 57654.118] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 57654.118] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 57654.118] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 57654.118] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 57654.118] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 57654.118] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 57654.118] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 57654.118] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 57654.118] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 57654.118] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 57654.118] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 57654.118] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 57654.118] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 57654.118] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 57654.118] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 57654.118] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 57654.119] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 57654.119] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 57654.119] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 57654.119] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 57654.119] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 57667.967] (II) modeset(0): Allocate new frame buffer 5760x1080 stride
+[ 57668.799] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 57668.799] (II) modeset(0): Using hsync ranges from config file
+[ 57668.799] (II) modeset(0): Using vrefresh ranges from config file
+[ 57668.799] (II) modeset(0): Printing DDC gathered Modelines:
+[ 57668.799] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 57668.799] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 57668.799] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 57669.673] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 57669.673] (II) modeset(0): Using hsync ranges from config file
+[ 57669.673] (II) modeset(0): Using vrefresh ranges from config file
+[ 57669.673] (II) modeset(0): Printing DDC gathered Modelines:
+[ 57669.673] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 57669.673] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 57669.673] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 57669.674] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 59478.478] (II) event5  - Logitech M510: SYN_DROPPED event - some input events have been lost.
+[ 59485.433] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 59485.433] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59485.433] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 59485.438] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 59485.438] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59485.438] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 59485.443] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 59485.443] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59485.443] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 59485.445] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 59485.445] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59485.445] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 59485.449] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 59485.449] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59485.449] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 59485.451] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 59485.451] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59485.451] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 59492.016] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 59492.016] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59492.016] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 59492.298] (II) modeset(0): Allocate new frame buffer 1920x1080 stride
+[ 59492.905] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 59492.905] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59492.905] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 59493.942] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 59493.942] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59493.942] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 59494.487] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 59494.487] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59494.487] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 59495.016] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 59495.016] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59495.016] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 59497.224] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 59497.224] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59497.224] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 59499.181] (II) modeset(0): Allocate new frame buffer 5760x1080 stride
+[ 59499.967] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 59499.967] (II) modeset(0): Using hsync ranges from config file
+[ 59499.967] (II) modeset(0): Using vrefresh ranges from config file
+[ 59499.967] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59499.967] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 59499.967] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 59499.967] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 59499.967] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 59499.967] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 59499.967] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 59499.967] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 59499.967] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 59499.967] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 59499.967] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 59499.967] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 59499.967] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 59499.967] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 59499.967] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 59499.967] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 59499.967] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 59499.968] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 59499.968] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 59499.968] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 59499.968] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 59499.968] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 59499.968] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 59501.112] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 59501.112] (II) modeset(0): Using hsync ranges from config file
+[ 59501.113] (II) modeset(0): Using vrefresh ranges from config file
+[ 59501.113] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59501.113] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 59501.113] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 59501.113] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 59504.893] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 59504.893] (II) modeset(0): Using hsync ranges from config file
+[ 59504.893] (II) modeset(0): Using vrefresh ranges from config file
+[ 59504.893] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59504.893] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 59504.893] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 59504.893] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 59504.893] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 59504.893] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 59504.893] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 59504.893] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 59504.893] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 59504.893] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 59504.893] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 59504.893] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 59504.893] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 59504.893] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 59504.893] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 59504.893] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 59504.893] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 59504.893] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 59504.893] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 59504.894] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 59504.894] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 59504.894] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 59504.894] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 59505.492] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 59505.493] (II) modeset(0): Using hsync ranges from config file
+[ 59505.493] (II) modeset(0): Using vrefresh ranges from config file
+[ 59505.493] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59505.493] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 59505.493] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 59505.493] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 59506.250] (II) event5  - Logitech M510: SYN_DROPPED event - some input events have been lost.
+[ 59508.624] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 59508.624] (II) modeset(0): Using hsync ranges from config file
+[ 59508.624] (II) modeset(0): Using vrefresh ranges from config file
+[ 59508.624] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59508.624] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 59508.624] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 59508.624] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 59508.624] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 59508.624] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 59508.624] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 59508.624] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 59508.624] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 59508.624] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 59508.625] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 59508.625] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 59508.625] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 59508.625] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 59508.625] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 59508.625] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 59508.625] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 59508.625] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 59508.625] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 59508.625] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 59508.625] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 59508.625] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 59508.625] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 59509.393] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 59509.393] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59509.393] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 59511.089] (II) modeset(0): Allocate new frame buffer 3840x1080 stride
+[ 59511.179] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 59511.179] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59511.179] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 59512.214] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 59512.214] (II) modeset(0): Using hsync ranges from config file
+[ 59512.214] (II) modeset(0): Using vrefresh ranges from config file
+[ 59512.214] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59512.214] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 59512.214] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 59512.214] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 59512.214] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 59512.214] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 59512.214] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 59512.214] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 59512.214] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 59512.214] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 59512.214] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 59512.214] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 59512.214] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 59512.214] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 59512.214] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 59512.214] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 59512.214] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 59512.214] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 59512.214] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 59512.214] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 59512.214] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 59512.215] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 59512.215] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 59576.981] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 59576.981] (II) modeset(0): Using hsync ranges from config file
+[ 59576.981] (II) modeset(0): Using vrefresh ranges from config file
+[ 59576.981] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59576.981] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 59576.981] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 59576.981] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 59576.981] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 59576.981] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 59576.981] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 59576.981] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 59576.981] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 59576.981] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 59576.981] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 59576.981] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 59576.981] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 59576.981] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 59576.981] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 59576.981] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 59576.981] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 59576.981] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 59576.981] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 59576.982] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 59576.982] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 59576.982] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 59576.982] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 59577.592] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 59577.592] (II) modeset(0): Using hsync ranges from config file
+[ 59577.592] (II) modeset(0): Using vrefresh ranges from config file
+[ 59577.592] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59577.592] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 59577.592] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 59577.592] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 59577.592] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 59577.593] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 59577.593] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 59577.593] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 59577.593] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 59577.593] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 59577.593] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 59577.593] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 59577.593] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 59577.593] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 59577.593] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 59577.593] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 59577.593] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 59577.593] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 59577.593] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 59577.593] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 59577.593] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 59577.593] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 59577.593] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 59578.093] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 59578.093] (II) modeset(0): Using hsync ranges from config file
+[ 59578.093] (II) modeset(0): Using vrefresh ranges from config file
+[ 59578.093] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59578.093] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 59578.093] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 59578.093] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 59578.454] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 59578.454] (II) modeset(0): Using hsync ranges from config file
+[ 59578.454] (II) modeset(0): Using vrefresh ranges from config file
+[ 59578.455] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59578.455] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 59578.455] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 59578.455] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 59579.621] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 59579.621] (II) modeset(0): Using hsync ranges from config file
+[ 59579.621] (II) modeset(0): Using vrefresh ranges from config file
+[ 59579.621] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59579.621] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 59579.621] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 59579.621] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 59579.621] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 59579.621] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 59579.621] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 59579.621] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 59579.621] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 59579.621] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 59579.621] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 59579.621] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 59579.621] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 59579.621] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 59579.621] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 59579.621] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 59579.621] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 59579.621] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 59579.621] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 59579.622] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 59579.622] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 59579.622] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 59579.622] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 59580.215] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 59580.215] (II) modeset(0): Using hsync ranges from config file
+[ 59580.216] (II) modeset(0): Using vrefresh ranges from config file
+[ 59580.216] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59580.216] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 59580.216] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 59580.216] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 59580.519] (II) modeset(0): Allocate new frame buffer 5760x1080 stride
+[ 59580.989] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 59580.989] (II) modeset(0): Using hsync ranges from config file
+[ 59580.989] (II) modeset(0): Using vrefresh ranges from config file
+[ 59580.989] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59580.989] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 59580.989] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 59580.989] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 59582.048] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 59582.048] (II) modeset(0): Using hsync ranges from config file
+[ 59582.048] (II) modeset(0): Using vrefresh ranges from config file
+[ 59582.048] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59582.048] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 59582.049] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 59582.049] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 59583.235] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 59583.236] (II) modeset(0): Using hsync ranges from config file
+[ 59583.236] (II) modeset(0): Using vrefresh ranges from config file
+[ 59583.236] (II) modeset(0): Printing DDC gathered Modelines:
+[ 59583.236] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 59583.236] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 59583.236] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 64104.370] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[ 64104.370] (II) modeset(0): Using hsync ranges from config file
+[ 64104.370] (II) modeset(0): Using vrefresh ranges from config file
+[ 64104.370] (II) modeset(0): Printing DDC gathered Modelines:
+[ 64104.370] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[ 64104.370] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[ 64104.370] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[ 64104.370] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[ 64104.370] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 64104.370] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[ 64104.370] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[ 64104.370] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[ 64104.370] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 64104.370] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[ 64104.370] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[ 64104.370] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[ 64104.370] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[ 64104.370] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 64104.371] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[ 64104.371] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 64104.371] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 64104.371] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 64104.371] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[ 64104.371] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[ 64104.371] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[ 64104.371] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[ 84128.197] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 84128.197] (II) modeset(0): Printing DDC gathered Modelines:
+[ 84128.197] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 84129.317] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 84129.317] (II) modeset(0): Printing DDC gathered Modelines:
+[ 84129.317] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 84129.321] (WW) modeset(0): flip queue failed: Invalid argument
+[ 84129.321] (WW) modeset(0): Page flip failed: Invalid argument
+[ 84129.327] (EE) modeset(0): failed to set mode: Invalid argument
+[ 84129.327] (II) modeset(0): Allocate new frame buffer 3840x1080 stride
+[ 84129.335] (EE) modeset(0): failed to set mode: Invalid argument
+[ 84129.502] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 84129.502] (II) modeset(0): Printing DDC gathered Modelines:
+[ 84129.502] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 84200.050] (EE) client bug: timer event5 debounce: scheduled expiry is in the past (-1247ms), your system is too slow
+[ 84200.050] (EE) client bug: timer event5 debounce short: scheduled expiry is in the past (-1260ms), your system is too slow
+[ 84260.522] (EE) client bug: timer event5 debounce: scheduled expiry is in the past (-1248ms), your system is too slow
+[ 84260.522] (EE) client bug: timer event5 debounce short: scheduled expiry is in the past (-1261ms), your system is too slow
+[ 84290.670] (EE) client bug: timer event5 debounce: scheduled expiry is in the past (-174ms), your system is too slow
+[ 84290.670] (EE) client bug: timer event5 debounce: scheduled expiry is in the past (-134ms), your system is too slow
+[ 84290.670] (EE) client bug: timer event5 debounce short: scheduled expiry is in the past (-147ms), your system is too slow
+[ 84518.287] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 84518.287] (II) modeset(0): Printing DDC gathered Modelines:
+[ 84518.287] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 84518.289] (II) modeset(0): Allocate new frame buffer 1920x1080 stride
+[ 84518.389] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[ 84518.389] (II) modeset(0): Printing DDC gathered Modelines:
+[ 84518.389] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[ 89830.817] (EE) event4  - MSFT0001:01 06CB:CE2D Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.15.5/touchpad-jumping-cursors.html for details
+[ 89831.048] (EE) event4  - MSFT0001:01 06CB:CE2D Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.15.5/touchpad-jumping-cursors.html for details
+[ 89831.824] (EE) event4  - MSFT0001:01 06CB:CE2D Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.15.5/touchpad-jumping-cursors.html for details
+[ 89831.852] (EE) event4  - MSFT0001:01 06CB:CE2D Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.15.5/touchpad-jumping-cursors.html for details
+[ 89842.090] (EE) event4  - MSFT0001:01 06CB:CE2D Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.15.5/touchpad-jumping-cursors.html for details
+[ 89842.090] (EE) event4  - MSFT0001:01 06CB:CE2D Touchpad: WARNING: log rate limit exceeded (5 msgs per 7200000ms). Discarding future messages.
+[103386.153] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[103386.153] (II) modeset(0): Printing DDC gathered Modelines:
+[103386.153] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[104403.815] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[104403.815] (II) modeset(0): Printing DDC gathered Modelines:
+[104403.815] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[104404.828] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[104404.828] (II) modeset(0): Printing DDC gathered Modelines:
+[104404.828] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[104405.339] (II) modeset(0): Allocate new frame buffer 5760x1080 stride
+[104407.807] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[104407.807] (II) modeset(0): Printing DDC gathered Modelines:
+[104407.807] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[104414.163] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[104414.163] (II) modeset(0): Printing DDC gathered Modelines:
+[104414.163] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[104420.974] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[104420.974] (II) modeset(0): Printing DDC gathered Modelines:
+[104420.974] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[104421.256] (II) modeset(0): Allocate new frame buffer 1920x1080 stride
+[104421.899] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[104421.899] (II) modeset(0): Printing DDC gathered Modelines:
+[104421.899] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[104422.938] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[104422.938] (II) modeset(0): Printing DDC gathered Modelines:
+[104422.938] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[104423.421] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[104423.421] (II) modeset(0): Printing DDC gathered Modelines:
+[104423.421] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[104425.879] (II) modeset(0): EDID vendor "CMN", prod id 5607
+[104425.879] (II) modeset(0): Printing DDC gathered Modelines:
+[104425.879] (II) modeset(0): Modeline "1920x1080"x0.0  152.84  1920 2000 2054 2250  1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)
+[104427.980] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[104427.980] (II) modeset(0): Using hsync ranges from config file
+[104427.980] (II) modeset(0): Using vrefresh ranges from config file
+[104427.980] (II) modeset(0): Printing DDC gathered Modelines:
+[104427.980] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[104427.981] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[104427.981] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[104427.981] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[104427.981] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[104427.981] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[104427.981] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[104427.981] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[104427.981] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[104427.981] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[104427.981] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[104427.981] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[104427.981] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[104427.981] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[104427.981] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[104427.981] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[104427.981] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[104427.981] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[104427.981] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[104427.981] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[104427.981] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[104427.981] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[104429.170] (II) modeset(0): Allocate new frame buffer 5760x1080 stride
+[104430.023] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[104430.023] (II) modeset(0): Using hsync ranges from config file
+[104430.023] (II) modeset(0): Using vrefresh ranges from config file
+[104430.023] (II) modeset(0): Printing DDC gathered Modelines:
+[104430.023] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[104430.023] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[104430.023] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[104430.023] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[104430.023] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[104430.023] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[104430.023] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[104430.023] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[104430.023] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[104430.023] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[104430.023] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[104430.023] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[104430.023] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[104430.023] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[104430.023] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[104430.023] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[104430.023] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[104430.023] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[104430.023] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[104430.023] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[104430.023] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[104430.023] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[104748.324] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[104748.324] (II) modeset(0): Using hsync ranges from config file
+[104748.324] (II) modeset(0): Using vrefresh ranges from config file
+[104748.324] (II) modeset(0): Printing DDC gathered Modelines:
+[104748.324] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[104748.324] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[104748.325] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[104748.325] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[104748.325] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[104748.325] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[104748.325] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[104748.325] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[104748.325] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[104748.325] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[104748.325] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[104748.325] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[104748.325] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[104748.325] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[104748.325] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[104748.325] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[104748.325] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[104748.325] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[104748.325] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[104748.325] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[104748.325] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[104748.325] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[114688.456] (II) modeset(0): EDID vendor "GSM", prod id 23381
+[114688.464] (II) modeset(0): Using hsync ranges from config file
+[114688.464] (II) modeset(0): Using vrefresh ranges from config file
+[114688.464] (II) modeset(0): Printing DDC gathered Modelines:
+[114688.464] (II) modeset(0): Modeline "1920x1080"x0.0  174.50  1920 1968 2000 2080  1080 1083 1088 1119 +hsync +vsync (83.9 kHz eP)
+[114688.464] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[114688.464] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[114688.464] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[114688.464] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[114688.464] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[114688.464] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[114688.464] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[114688.464] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[114688.464] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[114688.464] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[114688.464] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[114688.464] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[114688.464] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[114688.464] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[114688.464] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[114688.464] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[114688.464] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[114688.464] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[114688.464] (II) modeset(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[114688.464] (II) modeset(0): Modeline "1280x800"x0.0   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[114688.464] (II) modeset(0): Modeline "1400x1050"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[114706.258] (II) config/udev: Adding input device Jabra Elite 85t (AVRCP) (/dev/input/event14)
+[114706.258] (**) Jabra Elite 85t (AVRCP): Applying InputClass "libinput keyboard catchall"
+[114706.258] (II) Using input driver 'libinput' for 'Jabra Elite 85t (AVRCP)'
+[114706.259] (II) systemd-logind: got fd for /dev/input/event14 13:78 fd 84 paused 0
+[114706.259] (**) Jabra Elite 85t (AVRCP): always reports core events
+[114706.259] (**) Option "Device" "/dev/input/event14"
+[114706.259] (**) Option "_source" "server/udev"
+[114706.261] (II) event14 - Jabra Elite 85t (AVRCP): is tagged by udev as: Keyboard
+[114706.262] (II) event14 - Jabra Elite 85t (AVRCP): device is a keyboard
+[114706.262] (II) event14 - Jabra Elite 85t (AVRCP): device removed
+[114706.262] (**) Option "config_info" "udev:/sys/devices/virtual/input/input27/event14"
+[114706.262] (II) XINPUT: Adding extended input device "Jabra Elite 85t (AVRCP)" (type: KEYBOARD, id 14)
+[114706.262] (**) Option "xkb_model" "pc105"
+[114706.262] (**) Option "xkb_layout" "us"
+[114706.262] (WW) Option "xkb_variant" requires a string value
+[114706.262] (WW) Option "xkb_options" requires a string value
+[114706.263] (II) event14 - Jabra Elite 85t (AVRCP): is tagged by udev as: Keyboard
+[114706.263] (II) event14 - Jabra Elite 85t (AVRCP): device is a keyboard
+[115129.079] (II) config/udev: removing device Jabra Elite 85t (AVRCP)
+[115129.079] (**) Option "fd" "84"
+[115129.079] (II) event14 - Jabra Elite 85t (AVRCP): device removed
+[115129.084] (II) UnloadModule: "libinput"
+[115129.084] (II) systemd-logind: releasing fd for 13:78
+[115157.270] (II) config/udev: Adding input device Jabra Elite 85t (AVRCP) (/dev/input/event14)
+[115157.271] (**) Jabra Elite 85t (AVRCP): Applying InputClass "libinput keyboard catchall"
+[115157.271] (II) Using input driver 'libinput' for 'Jabra Elite 85t (AVRCP)'
+[115157.272] (II) systemd-logind: got fd for /dev/input/event14 13:78 fd 79 paused 0
+[115157.272] (**) Jabra Elite 85t (AVRCP): always reports core events
+[115157.272] (**) Option "Device" "/dev/input/event14"
+[115157.272] (**) Option "_source" "server/udev"
+[115157.273] (II) event14 - Jabra Elite 85t (AVRCP): is tagged by udev as: Keyboard
+[115157.273] (II) event14 - Jabra Elite 85t (AVRCP): device is a keyboard
+[115157.273] (II) event14 - Jabra Elite 85t (AVRCP): device removed
+[115157.273] (**) Option "config_info" "udev:/sys/devices/virtual/input/input28/event14"
+[115157.273] (II) XINPUT: Adding extended input device "Jabra Elite 85t (AVRCP)" (type: KEYBOARD, id 14)
+[115157.273] (**) Option "xkb_model" "pc105"
+[115157.273] (**) Option "xkb_layout" "us"
+[115157.274] (WW) Option "xkb_variant" requires a string value
+[115157.274] (WW) Option "xkb_options" requires a string value
+[115157.275] (II) event14 - Jabra Elite 85t (AVRCP): is tagged by udev as: Keyboard
+[115157.275] (II) event14 - Jabra Elite 85t (AVRCP): device is a keyboard

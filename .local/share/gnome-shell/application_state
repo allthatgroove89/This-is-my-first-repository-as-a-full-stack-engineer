@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="snap-store_ubuntu-software.desktop" score="15" last-seen="1707437991"/>
+    <application id="gnome-bluetooth-panel.desktop" score="0" last-seen="0"/>
+    <application id="org.gnome.eog.desktop" score="6" last-seen="1707416302"/>
+    <application id="org.gnome.Nautilus.desktop" score="19" last-seen="1707437877"/>
+    <application id="gnome-initial-setup.desktop" score="44" last-seen="1707138784"/>
+    <application id="firefox.desktop" score="24702" last-seen="1707442149"/>
+    <application id="gnome-display-panel.desktop" score="0" last-seen="0"/>
+    <application id="org.gnome.Terminal.desktop" score="3702" last-seen="1707442139"/>
+    <application id="org.gnome.Calculator.desktop" score="0" last-seen="1707233019"/>
+    <application id="snap-store_ubuntu-software-local-file.desktop" score="0" last-seen="0"/>
+    <application id="gnome-control-center.desktop" score="655" last-seen="1707440068"/>
+    <application id="update-manager.desktop" score="0" last-seen="1707145067"/>
+    <application id="org.gnome.gedit.desktop" score="0" last-seen="1707432484"/>
+    <application id="org.gnome.FileRoller.desktop" score="3" last-seen="1707437873"/>
+  </context>
+</application-state>

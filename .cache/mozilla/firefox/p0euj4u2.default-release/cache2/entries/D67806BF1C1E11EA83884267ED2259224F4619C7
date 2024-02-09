@@ -1,0 +1,445 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="emacs_files/filelist.xml">
+<title>Basic Emacs Commands</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>William Albritton</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>William Albritton</o:LastAuthor>
+  <o:Revision>6</o:Revision>
+  <o:TotalTime>22</o:TotalTime>
+  <o:Created>2007-01-17T21:21:00Z</o:Created>
+  <o:LastSaved>2007-01-17T21:23:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>480</o:Words>
+  <o:Characters>2740</o:Characters>
+  <o:Company>University of Hawaii</o:Company>
+  <o:Lines>22</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3214</o:CharactersWithSpaces>
+  <o:Version>11.8107</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>75</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:DocumentVariables>
+   <w:dgnword-docGUID>{6D22B404-51B7-4F99-BDBC-2F90E3614538}</w:dgnword-docGUID>
+   <w:dgnword-eventsink>12280024</w:dgnword-eventsink>
+  </w:DocumentVariables>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-alt:"\FF2D\FF33 \660E\671D";
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"MS Mincho";}
+span.spelle
+	{mso-style-name:spelle;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+<meta http-equiv=Content-Language content=en-us>
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p align=center style='text-align:center'><b><span style='font-size:24.0pt;
+color:red'>Basic emacs Commands</span></b></p>
+
+<table class=MsoNormalTable border=1 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt;border:outset white 1.0pt;
+ mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:13.2pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:13.2pt'>
+  <p align=center style='text-align:center'><b><span style='color:blue'>Command</span></b><o:p></o:p></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:13.2pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p align=center style='text-align:center'><b><span style='color:blue'>Description</span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt'><b><span
+  style='font-family:"Courier New"'>(Customize your emacs)</span></b></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Courier New"'>To enable the backspace key, disable tabs,
+  and customize the indention, put the following statements in your .emacs
+  file:<br style='mso-special-character:line-break'>
+  <![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+  <![endif]></span></b></p>
+  <pre><span style='font-size:12.0pt'>; disable the binding that has backspace call &quot;help&quot;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<o:p></o:p></span></pre><pre><span
+  style='font-size:12.0pt'>; enable it do the same as delete<o:p></o:p></span></pre><pre><span
+  style='font-size:12.0pt'>&nbsp;&nbsp;&nbsp;&nbsp; (global-set-key [?\C-h] 'delete-backward-char)<o:p></o:p></span></pre><pre><span
+  style='font-size:12.0pt'>&nbsp;&nbsp;&nbsp;&nbsp; (global-set-key [?\C-x ?h] 'help-command) ;; overrides mark-whole-buffer<o:p></o:p></span></pre><pre><span
+  style='font-size:12.0pt'>;disallow tabs<o:p></o:p></span></pre><pre><span
+  style='font-size:12.0pt'>&nbsp;&nbsp;&nbsp;&nbsp; (<span class=SpellE><span
+  class=spelle>setq</span></span>-default indent-tabs-mode nil)<o:p></o:p></span></pre><pre><span
+  style='font-size:12.0pt'>;set indenting to 4 places instead of default 2<o:p></o:p></span></pre><pre><span
+  style='font-size:12.0pt'>&nbsp;&nbsp;&nbsp;&nbsp; (<span class=SpellE><span
+  class=spelle>defun</span></span> <span class=SpellE><span class=spelle>indentk</span></span> ()<o:p></o:p></span></pre><pre><span
+  style='font-size:12.0pt'>&nbsp;&nbsp;&nbsp;&nbsp; (<span class=SpellE><span
+  class=spelle>setq</span></span> c-basic-offset 4))<o:p></o:p></span></pre><pre><span
+  style='font-size:12.0pt'>&nbsp;&nbsp;&nbsp;&nbsp; (add-hook 'c-mode-hook '<span
+  class=SpellE><span class=spelle>indentk</span></span>)<o:p></o:p></span></pre><pre><span
+  style='font-size:12.0pt;font-family:"Times New Roman"'>&nbsp;</span></pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+  style='font-family:"Courier New"'>emacs</span></b><o:p></o:p></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>The
+  best way to get started with emacs is to do the tutorial. If you start emacs
+  with no file name in the command line, you will get instructions on how to
+  run the tutorial. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+  style='font-family:"Courier New"'>M-x help</span></b><o:p></o:p></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Help
+  (Note: M-x means to first hit the escape key and then hit x.)</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+  style='font-family:"Courier New"'>C-x C-c</span></b><o:p></o:p></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Quit
+  emacs (Note: C-x means to press the control key and while you are holding it
+  down, press x. Other places use the notation ^X or ctrl-X.)</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+  style='font-family:"Courier New"'>C-x C-f</span></b><o:p></o:p></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Find
+  a file (<span class=SpellE>i</span>. e. open a file)</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+  style='font-family:"Courier New"'>C-x C-s</span></b><o:p></o:p></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Save
+  a file (the one you see)</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+  style='font-family:"Courier New"'>C-g</span></b><o:p></o:p></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Get
+  out of the command that you are in - try this when you don't know what is
+  going on</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+  style='font-family:"Courier New"'>C-x u</span></b><o:p></o:p></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Undo
+  (you can repeat this to undo several previous commands)</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+  style='font-family:"Courier New"'>Arrow keys</span></b><o:p></o:p></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>You
+  can use the arrow keys and also page up and page down to move the cursor.</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+  style='font-family:"Courier New"'>C-d</span></b><o:p></o:p></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Delete
+  the character by the cursor</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+  style='font-family:"Courier New"'>delete key (or backspace key)</span></b><o:p></o:p></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Delete
+  the character preceding the cursor</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+  style='font-family:"Courier New"'>C-k</span></b><o:p></o:p></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Delete
+  from the cursor to the end of the line</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+  style='font-family:"Courier New"'>Multiple Windows</span></b></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt'>
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>With
+  SSH, you can have any number of windows. I recommend that you start by
+  opening one window in which you run a program and another window for editing.
+  Edit a program in the edit window. Then save it--use C-x C-s--and then
+  compile it and run it in the other window. Just click in a window to make it
+  active. Note that you don't have to exit the editor--you have to save, but
+  you can leave the editor there while you run the program. It is convenient to
+  be able to see the program while you run it. It is also convenient to be able
+  to start editing by just clicking in the edit window. Sometimes it helps to
+  be able to see the execution output while you are editing. This is especially
+  true if you compile and get a bunch of error messages--you can see the error
+  messages while you edit the program to make the corrections. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+  style='font-family:"Courier New"'>C-v</span></b></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt'>
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Scroll-up:
+  program itself moves &quot;up&quot; - will finally end up at bottom of screen</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+  style='font-family:"Courier New"'>M-v</span></b></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt'>
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Scroll-down:
+  program itself moves &quot;down&quot; - will finally end up at top of screen
+  (Note: M is escape key)</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+  style='font-family:"Courier New"'>C-s</span></b></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt'>
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>It
+  does an &quot;incremental search&quot;, <span class=SpellE>i</span>. e. if
+  you are looking for &quot;hello&quot;, you type h and it looks for the first
+  h. Then you type e and it looks for &quot;he&quot;. etc.</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+  style='font-family:"Courier New"'>C-space, C-@</span></b></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt'>
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Select
+  text. You put the cursor at the beginning of the text and do C-Space or C-@
+  to mark that place, and then move the cursor to the other end of the desired
+  region. (This is called the Mark Set&quot; command.)</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+  style='font-family:"Courier New"'>C-w<o:p></o:p></span></b></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt'>
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Copies
+  and removes the text.<span style='mso-spacerun:yes'>  </span>(The text is removed
+  from the work buffer into the &quot;Kill Ring&quot; – the &quot;Kill
+  Region&quot; command.)</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:19;mso-yfti-lastrow:yes;height:11.4pt'>
+  <td width="21%" style='width:21.12%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt' bordercolorlight="#008000" bordercolordark="#008000">
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+  style='font-family:"Courier New"'>C-y</span></b></p>
+  </td>
+  <td width="78%" style='width:78.42%;border:inset white 1.0pt;padding:1.8pt 1.8pt 1.8pt 1.8pt;
+  height:11.4pt'>
+  <p class=MsoNormal style='mso-line-height-alt:11.4pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Pastes
+  (inserts) the text from the clipboard to where the cursor is. (This is called
+  the &quot;Yank&quot; command.)</p>
+  </td>
+ </tr>
+</table>
+
+<p>Notes by Dr. Wes Peterson and William Albritton</p>
+
+</div>
+
+</body>
+
+</html>
+§ gb/°      eÃªoeÃªqF‰£€eÃªp   e    O^partitionKey=%28https%2Chawaii.edu%29,:https://www2.hawaii.edu/~walbritt/ics211/materials/emacs.htm necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Wed, 07 Feb 2024 15:06:16 GMT
+Server: Apache/2.4.34 (Red Hat)
+Accept-Ranges: bytes
+Content-Length: 25302
+Content-Type: text/html; charset=UTF-8
+ original-response-headers Date: Wed, 07 Feb 2024 15:06:16 GMT
+Server: Apache/2.4.34 (Red Hat)
+Accept-Ranges: bytes
+Content-Length: 25302
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: BIGipServerwww2_hawaii_edu_80_pool2=3712487852.20480.0000; path=/; Httponly; Secure
+ ctid 1 uncompressed-len 0 net-response-time-onstart 1120 net-response-time-onstop 1259   bÖ

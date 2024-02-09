@@ -1,0 +1,75 @@
+{
+  "Version": "20.04",
+  "OEM": {
+    "Vendor": "LENOVO",
+    "Product": "20VE",
+    "Family": "ThinkBook 15 G2 ITL"
+  },
+  "BIOS": {
+    "Vendor": "LENOVO",
+    "Version": "F8CN46WW(V2.09)"
+  },
+  "CPU": {
+    "OpMode": "32-bit, 64-bit",
+    "CPUs": "8",
+    "Threads": "2",
+    "Cores": "4",
+    "Sockets": "1",
+    "Vendor": "GenuineIntel",
+    "Family": "6",
+    "Model": "140",
+    "Stepping": "1",
+    "Name": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+    "Virtualization": "VT-x"
+  },
+  "Arch": "amd64",
+  "GPU": [
+    {
+      "Vendor": "8086",
+      "Model": "9a49"
+    }
+  ],
+  "RAM": 7.9,
+  "Partitions": [
+    490.6,
+    0.5
+  ],
+  "Screens": [
+    {
+      "Size": "344mmx193mm",
+      "Resolution": "1920x1080",
+      "Frequency": "60.01"
+    }
+  ],
+  "Autologin": true,
+  "LivePatch": false,
+  "Session": {
+    "DE": "ubuntu:GNOME",
+    "Name": "ubuntu",
+    "Type": "x11"
+  },
+  "Language": "en_US",
+  "Timezone": "America/New_York",
+  "Install": {
+    "Media": "Ubuntu 20.04.2.0 LTS \"Focal Fossa\" - Release amd64 (20210209.1)",
+    "Type": "GTK",
+    "OEM": true,
+    "PartitionMethod": "use_device",
+    "DownloadUpdates": true,
+    "Language": "en",
+    "Minimal": true,
+    "RestrictedAddons": false,
+    "Stages": {
+      "0": "language",
+      "33": "console_setup",
+      "36": "wireless",
+      "59": "prepare",
+      "75": "partman",
+      "82": "start_install",
+      "90": "timezone",
+      "93": "usersetup",
+      "103": "user_done",
+      "380": "done"
+    }
+  }
+}

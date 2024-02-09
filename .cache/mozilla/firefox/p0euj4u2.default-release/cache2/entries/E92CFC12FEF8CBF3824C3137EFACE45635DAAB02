@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<!--Copyright (c) Duende Software. All rights reserved.-->
+<!--See LICENSE in the project root for license information.-->
+<html>
+<head>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <title>Check Session IFrame</title>
+</head>
+<body>
+    <script id='cookie-name' type='application/json'>idsrv.session</script>
+    <script>
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/*  SHA-256 implementation in JavaScript                (c) Chris Veness 2002-2014 / MIT Licence  */
+/*                                                                                                */
+/*  - see http://csrc.nist.gov/groups/ST/toolkit/secure_hashing.html                              */
+/*        http://csrc.nist.gov/groups/ST/toolkit/examples.html                                    */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+/* jshint node:true *//* global define, escape, unescape */
+'use strict';
+
+
+/**
+ * SHA-256 hash function reference implementation.
+ *
+ * @namespace
+ */
+var Sha256 = {};
+
+
+/**
+ * Generates SHA-256 hash of string.
+ *
+ * @param   {string} msg - String to be hashed
+ * @returns {string} Hash of msg as hex character string
+ */
+Sha256.hash = function(msg) {
+    // convert string to UTF-8, as SHA only deals with byte-streams
+    msg = msg.utf8Encode();
+    
+    // constants [§4.2.2]
+    var K = [
+        0x428a2f98, 0x71374491, 0xb5c0fbcf, 0xe9b5dba5, 0x3956c25b, 0x59f111f1, 0x923f82a4, 0xab1c5ed5,
+        0xd807aa98, 0x12835b01, 0x243185be, 0x550c7dc3, 0x72be5d74, 0x80deb1fe, 0x9bdc06a7, 0xc19bf174,
+        0xe49b69c1, 0xefbe4786, 0x0fc19dc6, 0x240ca1cc, 0x2de92c6f, 0x4a7484aa, 0x5cb0a9dc, 0x76f988da,
+        0x983e5152, 0xa831c66d, 0xb00327c8, 0xbf597fc7, 0xc6e00bf3, 0xd5a79147, 0x06ca6351, 0x14292967,
+        0x27b70a85, 0x2e1b2138, 0x4d2c6dfc, 0x53380d13, 0x650a7354, 0x766a0abb, 0x81c2c92e, 0x92722c85,
+        0xa2bfe8a1, 0xa81a664b, 0xc24b8b70, 0xc76c51a3, 0xd192e819, 0xd6990624, 0xf40e3585, 0x106aa070,
+        0x19a4c116, 0x1e376c08, 0x2748774c, 0x34b0bcb5, 0x391c0cb3, 0x4ed8aa4a, 0x5b9cca4f, 0x682e6ff3,
+        0x748f82ee, 0x78a5636f, 0x84c87814, 0x8cc70208, 0x90befffa, 0xa4506ceb, 0xbef9a3f7, 0xc67178f2 ];
+    // initial hash value [§5.3.1]
+    var H = [
+        0x6a09e667, 0xbb67ae85, 0x3c6ef372, 0xa54ff53a, 0x510e527f, 0x9b05688c, 0x1f83d9ab, 0x5be0cd19 ];
+
+    // PREPROCESSING 
+ 
+    msg += String.fromCharCode(0x80);  // add trailing '1' bit (+ 0's padding) to string [§5.1.1]
+
+    // convert string msg into 512-bit/16-integer blocks arrays of ints [§5.2.1]
+    var l = msg.length/4 + 2; // length (in 32-bit integers) of msg + ‘1’ + appended length
+    var N = Math.ceil(l/16);  // number of 16-integer-blocks required to hold 'l' ints
+    var M = new Array(N);
+
+    for (var i=0; i<N; i++) {
+        M[i] = new Array(16);
+        for (var j=0; j<16; j++) {  // encode 4 chars per integer, big-endian encoding
+            M[i][j] = (msg.charCodeAt(i*64+j*4)<<24) | (msg.charCodeAt(i*64+j*4+1)<<16) | 
+                      (msg.charCodeAt(i*64+j*4+2)<<8) | (msg.charCodeAt(i*64+j*4+3));
+        } // note running off the end of msg is ok 'cos bitwise ops on NaN return 0
+    }
+    // add length (in bits) into final pair of 32-bit integers (big-endian) [§5.1.1]
+    // note: most significant word would be (len-1)*8 >>> 32, but since JS converts
+    // bitwise-op args to 32 bits, we need to simulate this by arithmetic operators
+    M[N-1][14] = ((msg.length-1)*8) / Math.pow(2, 32); M[N-1][14] = Math.floor(M[N-1][14]);
+    M[N-1][15] = ((msg.length-1)*8) & 0xffffffff;
+
+
+    // HASH COMPUTATION [§6.1.2]
+
+    var W = new Array(64); var a, b, c, d, e, f, g, h;
+    for (var i=0; i<N; i++) {
+
+        // 1 - prepare message schedule 'W'
+        for (var t=0;  t<16; t++) W[t] = M[i][t];
+        for (var t=16; t<64; t++) W[t] = (Sha256.σ1(W[t-2]) + W[t-7] + Sha256.σ0(W[t-15]) + W[t-16]) & 0xffffffff;
+
+        // 2 - initialise working variables a, b, c, d, e, f, g, h with previous hash value
+        a = H[0]; b = H[1]; c = H[2]; d = H[3]; e = H[4]; f = H[5]; g = H[6]; h = H[7];
+
+        // 3 - main loop (note 'addition modulo 2^32')
+        for (var t=0; t<64; t++) {
+            var T1 = h + Sha256.Σ1(e) + Sha256.Ch(e, f, g) + K[t] + W[t];
+            var T2 =     Sha256.Σ0(a) + Sha256.Maj(a, b, c);
+            h = g;
+            g = f;
+            f = e;
+            e = (d + T1) & 0xffffffff;
+            d = c;
+            c = b;
+            b = a;
+            a = (T1 + T2) & 0xffffffff;
+        }
+         // 4 - compute the new intermediate hash value (note 'addition modulo 2^32')
+        H[0] = (H[0]+a) & 0xffffffff;
+        H[1] = (H[1]+b) & 0xffffffff; 
+        H[2] = (H[2]+c) & 0xffffffff; 
+        H[3] = (H[3]+d) & 0xffffffff; 
+        H[4] = (H[4]+e) & 0xffffffff;
+        H[5] = (H[5]+f) & 0xffffffff;
+        H[6] = (H[6]+g) & 0xffffffff; 
+        H[7] = (H[7]+h) & 0xffffffff; 
+    }
+
+    return Sha256.toHexStr(H[0]) + Sha256.toHexStr(H[1]) + Sha256.toHexStr(H[2]) + Sha256.toHexStr(H[3]) + 
+           Sha256.toHexStr(H[4]) + Sha256.toHexStr(H[5]) + Sha256.toHexStr(H[6]) + Sha256.toHexStr(H[7]);
+};
+
+
+/**
+ * Rotates right (circular right shift) value x by n positions [§3.2.4].
+ * @private
+ */
+Sha256.ROTR = function(n, x) {
+    return (x >>> n) | (x << (32-n));
+};
+
+/**
+ * Logical functions [§4.1.2].
+ * @private
+ */
+Sha256.Σ0  = function(x) { return Sha256.ROTR(2,  x) ^ Sha256.ROTR(13, x) ^ Sha256.ROTR(22, x); };
+Sha256.Σ1  = function(x) { return Sha256.ROTR(6,  x) ^ Sha256.ROTR(11, x) ^ Sha256.ROTR(25, x); };
+Sha256.σ0  = function(x) { return Sha256.ROTR(7,  x) ^ Sha256.ROTR(18, x) ^ (x>>>3);  };
+Sha256.σ1  = function(x) { return Sha256.ROTR(17, x) ^ Sha256.ROTR(19, x) ^ (x>>>10); };
+Sha256.Ch  = function(x, y, z) { return (x & y) ^ (~x & z); };
+Sha256.Maj = function(x, y, z) { return (x & y) ^ (x & z) ^ (y & z); };
+
+
+/**
+ * Hexadecimal representation of a number.
+ * @private
+ */
+Sha256.toHexStr = function(n) {
+    // note can't use toString(16) as it is implementation-dependant,
+    // and in IE returns signed numbers when used on full words
+    var s='', v;
+    for (var i=7; i>=0; i--) { v = (n>>>(i*4)) & 0xf; s += v.toString(16); }
+    return s;
+};
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+
+/** Extend String object with method to encode multi-byte string to utf8
+ *  - monsur.hossa.in/2012/07/20/utf-8-in-javascript.html */
+if (typeof String.prototype.utf8Encode == 'undefined') {
+    String.prototype.utf8Encode = function() {
+        return unescape( encodeURIComponent( this ) );
+    };
+}
+
+/** Extend String object with method to decode utf8 string to multi-byte */
+if (typeof String.prototype.utf8Decode == 'undefined') {
+    String.prototype.utf8Decode = function() {
+        try {
+            return decodeURIComponent( escape( this ) );
+        } catch (e) {
+            return this; // invalid UTF-8? return as-is
+        }
+    };
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+if (typeof module != 'undefined' && module.exports) module.exports = Sha256; // CommonJs export
+if (typeof define == 'function' && define.amd) define([], function() { return Sha256; }); // AMD
+
+////////////////////////////////////////////////////////////////////
+///////////// IdentityServer JS Code Starts here ///////////////////
+////////////////////////////////////////////////////////////////////
+
+        function getCookies() {
+            var allCookies = document.cookie;
+            var cookies = allCookies.split(';');
+            return cookies.map(function(value) {
+                var parts = value.trim().split('=');
+                if (parts.length === 2) {
+                    return {
+                        name: parts[0].trim(),
+                        value: parts[1].trim()
+                    };
+                }
+            }).filter(function(item) {
+                return item && item.name && item.value;
+            });
+        }
+
+        function getBrowserSessionId() {
+            var cookies = getCookies().filter(function(cookie) {
+                return (cookie.name === cookieName);
+            });
+            // empty string represents anonymous sid
+            return (cookies[0] && cookies[0].value) || '';
+        }
+
+        /*! (c) Tom Wu | http://www-cs-students.stanford.edu/~tjw/jsbn/ */
+        var b64map = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
+        var b64pad = '=';
+
+        function hex2b64(h) {
+            var i;
+            var c;
+            var ret = '';
+            for (i = 0; i + 3 <= h.length; i += 3) {
+                c = parseInt(h.substring(i, i + 3), 16);
+                ret += b64map.charAt(c >> 6) + b64map.charAt(c & 63);
+            }
+            if (i + 1 == h.length) {
+                c = parseInt(h.substring(i, i + 1), 16);
+                ret += b64map.charAt(c << 2);
+            }
+            else if (i + 2 == h.length) {
+                c = parseInt(h.substring(i, i + 2), 16);
+                ret += b64map.charAt(c >> 2) + b64map.charAt((c & 3) << 4);
+            }
+            if (b64pad) while ((ret.length & 3) > 0) ret += b64pad;
+            return ret;
+        }
+
+        function base64UrlEncode(s){
+            var val = hex2b64(s);
+
+            val = val.replace(/=/g, ''); // Remove any trailing '='s
+            val = val.replace(/\+/g, '-'); // '+' => '-'
+            val = val.replace(/\//g, '_'); // '/' => '_'
+
+            return val;
+        }
+
+        function hash(value) {
+            var hash = Sha256.hash(value);
+            return base64UrlEncode(hash);
+        }
+
+        function computeSessionStateHash(clientId, origin, sessionId, salt) {
+            return hash(clientId + origin + sessionId + salt);
+        }
+
+        function calculateSessionStateResult(origin, message) {
+            try {
+                if (!origin || !message) {
+                    return 'error';
+                }
+
+                var idx = message.lastIndexOf(' ');
+                if (idx < 0 || idx >= message.length) {
+                    return 'error';
+                }
+
+                var clientId = message.substring(0, idx);
+                var sessionState = message.substring(idx + 1);
+
+                if (!clientId || !sessionState) {
+                    return 'error';
+                }
+
+                var sessionStateParts = sessionState.split('.');
+                if (sessionStateParts.length !== 2) {
+                    return 'error';
+                }
+
+                var clientHash = sessionStateParts[0];
+                var salt = sessionStateParts[1];
+                if (!clientHash || !salt) {
+                    return 'error';
+                }
+
+                var currentSessionId = getBrowserSessionId();
+                var expectedHash = computeSessionStateHash(clientId, origin, currentSessionId, salt);
+                return clientHash === expectedHash ? 'unchanged' : 'changed';
+            }
+            catch (e) {
+                return 'error';
+            }
+        }
+
+        var cookieNameElem = document.getElementById('cookie-name');
+        if (cookieNameElem) {
+            var cookieName = cookieNameElem.textContent.trim();
+        }
+
+        if (cookieName && window.parent !== window) {
+            window.addEventListener('message', function(e) {
+                if (window === e.source) {
+                    // ignore browser extensions that are sending messages.
+                    return;
+                }
+
+                if (typeof e.data !== 'string') {
+                    return;
+                }
+
+                var result = calculateSessionStateResult(e.origin, e.data);
+                e.source.postMessage(result, e.origin);
+            }, false);
+        }
+    </script>
+</body>
+</html>
+��E*�      e�-ye�-yF�.?e��   [    O^partitionKey=%28https%2Csaltoks.com%29,:https://identity.saltoks.com/connect/checksession necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2 200 
+date: Mon, 05 Feb 2024 15:59:32 GMT
+content-type: text/html; charset=UTF-8
+clp-correlation-id: 3139bf8d-5b09-4bb5-b87b-a6e1402ad04d
+strict-transport-security: max-age=15724800; includeSubDomains
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1;mode=block
+x-content-type-options: nosniff
+content-security-policy: default-src 'self'; font-src 'self'  data: fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com/ 'unsafe-inline'; img-src * data:; frame-ancestors 'self' *.saltoks.com ; script-src 'self' https://ipinfo.io/ 'unsafe-inline';
+x-permitted-cross-domain-policies: none;
+referrer-policy: no-referrer
+x-content-security-policy: default-src 'self'; font-src 'self'  data: fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com/ 'unsafe-inline'; img-src * data:; frame-ancestors 'self' *.saltoks.com ; script-src 'self' https://ipinfo.io/ 'unsafe-inline';
+X-Firefox-Spdy: h2
+ original-response-headers date: Mon, 05 Feb 2024 15:59:32 GMT
+content-type: text/html; charset=UTF-8
+clp-correlation-id: 3139bf8d-5b09-4bb5-b87b-a6e1402ad04d
+strict-transport-security: max-age=15724800; includeSubDomains
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1;mode=block
+x-content-type-options: nosniff
+content-security-policy: default-src 'self'; font-src 'self'  data: fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com/ 'unsafe-inline'; img-src * data:; frame-ancestors 'self' *.saltoks.com ; script-src 'self' https://ipinfo.io/ 'unsafe-inline';
+x-permitted-cross-domain-policies: none;
+referrer-policy: no-referrer
+x-content-security-policy: default-src 'self'; font-src 'self'  data: fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com/ 'unsafe-inline'; img-src * data:; frame-ancestors 'self' *.saltoks.com ; script-src 'self' https://ipinfo.io/ 'unsafe-inline';
+X-Firefox-Spdy: h2
+ ctid 1 uncompressed-len 0 net-response-time-onstart 148 net-response-time-onstop 150   /�

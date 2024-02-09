@@ -1,0 +1,541 @@
+<HTML>
+<HEAD>
+<TITLE>
+Basic vi Commands
+</TITLE>
+</HEAD>
+
+<BODY BACKGROUND="Figures/csucs.gif"
+        TEXT="#000000" VLINK="#0000a0"
+        LINK="#0000ff" ALINK="#ff0000" BGCOLOR="#c0c0ff">
+         
+<TABLE WIDTH=98%>
+<TD ALIGN=LEFT>
+<IMG SRC="Figures/csbanner7.gif"
+      ALT="Colorado State University ">
+<TD ALIGN=RIGHT>
+<H1 ALIGN=RIGHT> <FONT COLOR=NAVY>
+	Basic vi Commands
+</FONT></H1>
+<TR>
+</TABLE>
+<HR NOSHADE COLOR=NAVY>
+<HR NOSHADE COLOR=NAVY>
+<H3>What is <TT>vi</TT>?</H3>
+<DL>
+<DD>The default editor that comes with the
+UNIX operating system is called <TT>vi</TT> (<B>vi</B>sual editor).
+[Alternate editors for UNIX environments include <TT>pico</TT>
+and <TT>emacs</TT>, a product of GNU.]
+<P>
+<DD>The UNIX <TT>vi</TT> editor is a full screen editor and has two modes of 
+operation: 
+	<OL>
+	<LI> <I>Command mode</I> commands
+		which cause action to be taken on the file, and 
+	<LI><I>Insert mode</I> in which entered text is inserted into the file.
+	</OL>
+In the command mode, every character typed is a command that does
+something to the text file being edited;  a character typed in the
+command mode may even cause the <TT>vi</TT> editor to enter the
+insert mode.
+In the insert mode, every character typed is added to the text
+in the file;  pressing the <TT>&lt;Esc&gt;</TT> (<I>Escape</I>) key
+turns off the Insert mode.
+<P>
+<DD>While there are a number of <TT>vi</TT> commands, just a handful
+of these is usually sufficient for beginning <TT>vi</TT> users.
+To assist such users, this Web page
+contains a sampling of basic <TT>vi</TT> commands. 
+The most basic and useful commands are marked with an asterisk
+(<TT>*</TT> or star) in the tables below.
+With practice, these commands should become automatic.
+<P>
+<DD><B>NOTE:</B>  Both UNIX and <TT>vi</TT> are <B>case-sensitive</B>.
+Be sure not to use a capital letter in place of a lowercase
+letter;  the results will not be what you expect.
+</DL>
+<P><HR NOSHADE COLOR=NAVY><P>
+<H3>To Get Into and Out Of <TT>vi</TT></H3>
+<P>
+<H4>To Start <TT>vi</TT></H4>
+<DL>
+<P>
+<DD>To use <TT>vi</TT> on a file, type in <TT>vi filename</TT>.  If
+the file named <TT>filename</TT> exists, then the first page (or screen)
+of the file will be displayed; if the file does not exist, then an
+empty file and screen are created into which you may enter text.
+</DL>
+<P>
+<CENTER>
+<TABLE BORDER>
+<TH> *
+<TH ALIGN=LEFT><TT>vi filename</TT>
+	<TD> <I>edit <TT>filename</TT> starting at line 1</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT><TT>vi -r filename</TT>
+	<TD> <I>recover <TT>filename</TT> that was being
+		edited when system crashed</I>
+<TR>
+</TABLE>
+</CENTER>
+<P>
+<H4>To Exit <TT>vi</TT></H4>
+<P>
+<DL>
+<DD>Usually the new or modified file is saved when you
+leave <TT>vi</TT>.  However, it is also possible to quit
+<TT>vi</TT> without saving the file.
+<P>
+<DD><B>Note:</B> The cursor moves to bottom of screen whenever a
+colon (<TT>:</TT>) is typed.  This type of command is completed by
+hitting the <TT>&lt;Return&gt;</TT> (or <TT>&lt;Enter&gt;</TT>) key.
+</DL>
+<P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TH> *
+<TH ALIGN=LEFT><TT>:x</TT><TT>&lt;Return&gt;</TT>
+	<TD> <I>quit <TT>vi</TT>, writing out modified file
+		to file named in original invocation</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT><TT>:wq</TT><TT>&lt;Return&gt;</TT>
+	<TD> <I>quit <TT>vi</TT>, writing out modified file
+		to file named in original invocation</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT><TT>:q</TT><TT>&lt;Return&gt;</TT>
+	<TD> <I>quit (or exit) <TT>vi</TT></I>
+<TR>
+<TH> *
+<TH ALIGN=LEFT><TT>:q!</TT><TT>&lt;Return&gt;</TT>
+	<TD> <I>quit <TT>vi</TT> even though latest changes
+		have not been saved for this <TT>vi</TT> call</I>
+<TR>
+</TABLE>
+</CENTER>
+<P><HR NOSHADE COLOR=NAVY><P>
+<H3>Moving the Cursor</H3>
+<DL>
+<P>
+<DD>Unlike many of the PC and MacIntosh editors, <B>the mouse does not
+move the cursor</B> within the <TT>vi</TT> editor screen (or window). 
+You must use the
+the key commands listed below.  On some UNIX platforms, the arrow keys
+may be used as well;  however, since <TT>vi</TT> was designed with
+the Qwerty keyboard (containing no arrow keys) in mind, the arrow
+keys sometimes produce strange effects in <TT>vi</TT> and should
+be avoided.
+<P>
+<DD>If you go back and forth between a PC environment and a UNIX
+environment, you may find that this dissimilarity in methods for
+cursor movement is the most frustrating difference between the two.
+<P>
+<DD>In the table below, the symbol <TT>^</TT> before a letter means
+that the <TT>&lt;Ctrl&gt;</TT> key should be held down while the
+letter key is pressed.
+</DL>
+<P>
+<CENTER>
+<TABLE BORDER>
+<TH> *
+<TH ALIGN=LEFT><TT>j</TT> <I>or</I> <TT>&lt;Return&gt;</TT>
+		<BR> &#160; [<I>or</I> down-arrow]
+	<TD> <I>move cursor down one line</I>
+<TR>
+<TH> *
+<TH ALIGN=LEFT><TT>k</TT> [<I>or</I> up-arrow]
+	<TD> <I>move cursor up one line</I>
+<TR>
+<TH> *
+<TH ALIGN=LEFT><TT>h</TT> <I>or</I> <TT>&lt;Backspace&gt;</TT>
+		<BR> &#160; [<I>or</I> left-arrow]
+	<TD> <I>move cursor left one character</I>
+<TR>
+<TH> *
+<TH ALIGN=LEFT><TT>l</TT> <I>or</I> <TT>&lt;Space&gt;</TT>
+		<BR> &#160; [<I>or</I> right-arrow]
+	<TD> <I>move cursor right one character</I>
+<TR>
+<TH> *
+<TH ALIGN=LEFT NOWRAP><TT>0</TT> (zero)
+	<TD> <I>move cursor to start of current line
+		(the one with the cursor)</I>
+<TR>
+<TH> *
+<TH ALIGN=LEFT NOWRAP><TT>$</TT>
+	<TD><I>move cursor to end of current line</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>w</TT>
+	<TD><I>move cursor to beginning of next word</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>b</TT>
+	<TD><I>move cursor back to beginning of preceding word</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>:0</TT><TT>&lt;Return&gt; <I>or</I> 1G</TT>
+	<TD> <I>move cursor to first line in file</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>:n</TT><TT>&lt;Return&gt; <I>or</I> nG</TT>
+	<TD> <I>move cursor to line <TT>n</TT></I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT><TT>:$</TT><TT>&lt;Return&gt; <I>or</I> G</TT>
+	<TD> <I> move cursor to last line in file</I>
+<TR>
+</TABLE>
+</CENTER>
+<P><HR NOSHADE COLOR=NAVY><P>
+<H3>Screen Manipulation</H3>
+<DL>
+<P>
+<DD>The following commands allow 
+the <TT>vi</TT> editor screen (or window) to
+move up or down several lines and to be refreshed.
+</DL>
+<P>
+<CENTER>
+<TABLE BORDER>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>^f</TT>
+	<TD> <I>move forward one screen</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>^b</TT>
+	<TD> <I>move backward one screen</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>^d</TT>
+	<TD> <I>move down (forward) one half screen</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>^u</TT>
+	<TD> <I>move up (back) one half screen</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>^l</TT>
+	<TD> <I>redraws the screen</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>^r</TT>
+	<TD> <I>redraws the screen, removing deleted lines</I>
+<TR>
+</TABLE>
+</CENTER>
+<P><HR NOSHADE COLOR=NAVY><P>
+<H3>Adding, Changing, and Deleting Text</H3>
+<DL>
+<P>
+<DD>Unlike PC editors, you cannot replace or delete text by highlighting it with
+the mouse.  Instead use the commands in the following tables.  
+<P>
+<DD>Perhaps the most important command is the one that allows you
+to back up and <I>undo</I> your last action.  Unfortunately, this
+command acts like a toggle, undoing and redoing your most recent
+action.  You cannot go back more than one step.
+</DL>
+<P>
+<CENTER>
+<TABLE BORDER>
+<TH> *
+<TH ALIGN=LEFT NOWRAP><TT>u</TT>
+	<TD> <I>UNDO WHATEVER YOU JUST DID; a simple toggle</I>
+<TR>
+</TABLE>
+</CENTER>
+<DL>
+<P>
+<DD>The main purpose of an editor is to create, add, or modify text
+for a file. 
+<P>
+</DL>
+<H4>Inserting or Adding Text</H4>
+<DL>
+<P>
+<DD> The following commands allow you to insert and add text.
+Each of these commands puts the <TT>vi</TT> editor into insert mode;
+thus, the <TT>&lt;Esc&gt;</TT> key must be pressed to terminate the
+entry of text and to put the <TT>vi</TT> editor back into command mode.
+<P>
+</DL>
+<CENTER>
+<TABLE BORDER>
+<TH> *
+<TH ALIGN=LEFT NOWRAP><TT>i</TT>
+	<TD> <I>insert text before cursor, until <TT>&lt;Esc&gt;</TT> hit</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>I</TT>
+	<TD> <I>insert text at beginning of current line,
+		until <TT>&lt;Esc&gt;</TT> hit</I>
+<TR>
+<TH> *
+<TH ALIGN=LEFT NOWRAP><TT>a</TT>
+	<TD> <I>append text after cursor, until <TT>&lt;Esc&gt;</TT> hit</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>A</TT>
+	<TD> <I>append text to end of current line,
+		until <TT>&lt;Esc&gt;</TT> hit</I>
+<TR>
+<TH> *
+<TH ALIGN=LEFT NOWRAP><TT>o</TT>
+	<TD> <I>open and put text in a new line below current line,
+		until <TT>&lt;Esc&gt;</TT> hit</I>
+<TR>
+<TH> *
+<TH ALIGN=LEFT NOWRAP><TT>O</TT>
+	<TD> <I>open and put text in a new line above current line,
+		until <TT>&lt;Esc&gt;</TT> hit</I>
+<TR>
+</TABLE>
+</CENTER>
+<P>
+<H4>Changing Text</H4>
+<DL>
+<P>
+<DD>The following commands allow you to modify text.
+<P>
+</DL>
+<CENTER>
+<TABLE BORDER>
+<TH> *
+<TH ALIGN=LEFT NOWRAP><TT>r</TT>
+	<TD> <I> replace single character under cursor
+		(no <TT>&lt;Esc&gt;</TT> needed)</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>R</TT>
+	<TD> <I>replace characters, starting with current cursor position,
+		until <TT>&lt;Esc&gt;</TT> hit</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>cw</TT>
+	<TD> <I>change the current word with new text,
+		<BR>starting with the
+		character under cursor, until <TT>&lt;Esc&gt;</TT> hit</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>cNw</TT>
+	<TD> <I>change <TT>N</TT> words beginning with character under cursor,
+		until <TT>&lt;Esc&gt;</TT> hit;
+		<BR> &#160; e.g., <TT>c5w</TT> changes 5 words</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>C</TT>
+	<TD> <I>change (replace) the characters in the current line,
+		until <TT>&lt;Esc&gt;</TT> hit</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>cc</TT>
+	<TD> <I>change (replace) the entire current line, 
+		stopping when <TT>&lt;Esc&gt;</TT> is hit</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>Ncc</TT> <I>or</I> <TT>cNc</TT>
+	<TD> <I>change (replace) the next N lines,
+		starting with the current line,<BR>
+		stopping when <TT>&lt;Esc&gt;</TT> is hit</I>
+<TR>
+</TABLE>
+</CENTER>
+<P>
+<H4>Deleting Text</H4>
+<DL>
+<P>
+<DD>The following commands allow you to delete text.
+<P>
+</DL>
+<CENTER>
+<TABLE BORDER>
+<TH> *
+<TH ALIGN=LEFT NOWRAP><TT>x</TT>
+	<TD> <I>delete single character under cursor</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>Nx</TT>
+	<TD> <I>delete N characters, starting with character under cursor</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>dw</TT>
+	<TD> <I>delete the single word beginning with character under cursor</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>dNw</TT>
+	<TD> <I>delete <TT>N</TT> words beginning with character under cursor;
+		<BR> &#160; e.g., <TT>d5w</TT> deletes 5 words</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>D</TT>
+	<TD> <I>delete the remainder of the line,
+		starting with current cursor position</I>
+<TR>
+<TH> *
+<TH ALIGN=LEFT NOWRAP><TT>dd</TT>
+	<TD> <I>delete entire current line</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>Ndd</TT> <I>or</I> <TT>dNd</TT>
+	<TD> <I>delete <TT>N</TT> lines, beginning with the current line;
+		<BR> &#160; e.g., <TT>5dd</TT> deletes 5 lines</I>
+<TR>
+</TABLE>
+</CENTER>
+<P>
+<H4>Cutting and Pasting Text</H4>
+<DL>
+<P>
+<DD>The following commands allow you to copy and paste text.
+<P>
+</DL>
+<CENTER>
+<TABLE BORDER>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>yy</TT>
+	<TD> <I>copy (yank, cut) the current line into the buffer</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>Nyy</TT> <I>or</I> <TT>yNy</TT>
+	<TD> <I>copy (yank, cut) the next N lines, including the current line,
+		into the buffer</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>p</TT>
+	<TD> <I>put (paste) the line(s) in the buffer into the
+		text after the current line</I>
+<TR>
+</TABLE>
+</CENTER>
+<P><HR NOSHADE COLOR=NAVY><P>
+<H3>Other Commands</H3>
+<P>
+<H4>Searching Text</H4>
+<DL>
+<P>
+<DD> A common occurrence in text editing is to replace one word or
+phase by another.  To locate instances of particular sets of characters
+(or strings), use the following commands.
+<P>
+</DL>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT><TT>/string</TT>
+	<TD> <I> search forward for occurrence of <TT>string</TT> in text<I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT><TT>?string</TT>
+	<TD> <I> search backward for occurrence of <TT>string</TT> in text<I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT><TT>n</TT>
+	<TD> <I> move to next occurrence of search string</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT><TT>N</TT>
+	<TD> <I> move to next occurrence of search string in opposite
+		direction</I>
+<TR>
+</TABLE>
+</CENTER>
+<P>
+<H4>Determining Line Numbers</H4>
+<DL>
+<P>
+<DD> Being able to determine the line number of the current line
+or the total number of lines in the file being edited is sometimes
+useful.
+<P>
+</DL>
+<CENTER>
+<TABLE BORDER>
+<TH> &#160;
+<TH ALIGN=LEFT><TT>:.=</TT>
+	<TD> <I> returns line number of current line at bottom of screen<I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT><TT>:=</TT>
+	<TD> <I> returns the total number of lines at bottom of screen<I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>^g</TT>
+	<TD> <I>provides the current line number, along with the total
+		number of lines,<BR>
+		in the file at the bottom of the screen</I>
+<TR>
+</TABLE>
+</CENTER>
+<P><HR NOSHADE COLOR=NAVY><P>
+<H3>Saving and Reading Files</H3>
+<P>
+These commands permit you to input and output files other
+than the named file with which you are currently working.
+<P>
+<CENTER>
+<TABLE BORDER>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>:r filename</TT><TT>&lt;Return&gt;</TT>
+	<TD> <I> read file named <TT>filename</TT> and insert after
+		current line
+		<BR>(the line with cursor)</I>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>:w</TT><TT>&lt;Return&gt;</TT>
+	<TD> <I>write current contents to file named in original 
+		<TT>vi</TT> call
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>:w newfile</TT><TT>&lt;Return&gt;</TT>
+	<TD> <I>write current contents to a new file named <TT>newfile</TT>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>:12,35w smallfile</TT><TT>&lt;Return&gt;</TT>
+	<TD> <I>write the contents of the lines numbered 12 through 35
+		to a new file named <TT>smallfile</TT>
+<TR>
+<TH> &#160;
+<TH ALIGN=LEFT NOWRAP><TT>:w! prevfile</TT><TT>&lt;Return&gt;</TT>
+	<TD> <I>write current contents over a pre-existing file
+		named <TT>prevfile</TT>
+<TR>
+</TABLE>
+</CENTER>
+<P> <HR NOSHADE COLOR=NAVY>
+<!--
+<BR>
+<B>Copyright &#169 1998: Colorado State University, CS Department.</B>
+All rights reserved.
+-->
+<HR NOSHADE COLOR=NAVY>
+
+</BODY>
+</HTML>
+Õ<‰Ä—†      eÅõeÅõF‹ÌeÌòŒ   Y    O^partitionKey=%28https%2Ccolostate.edu%29,:https://www.cs.colostate.edu/helpdocs/vi.html necko:classified 1 strongly-framed 1 security-info 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I6Fbig0eJHh6uBOMnmoTAiAbRJSw3mb+UTIUsnu6kGW581blWcnrzInNYwuiPqIgQgB3AE51oydcmhDDOFts1N8/Uusd8OCOG41pwLH6ZLFimjnfAAABjTdUSMsAAAQDAEgwRgIhAKhBiLNgTdFbbBLEWyYnDPv+4wm9Nu0rKSDIfA3BtNvIAiEAv33xHQKPvGHR3GH85327eBZYGlYuiqRmlaaR6dPRGxEwggIbBgNVHREEggISMIICDoIQY3MuY29sb3N0YXRlLmVkdYIWY29tYmkuY3MuY29sb3N0YXRlLmVkdYIXZmluZWV0LmNzLmNvbG9zdGF0ZS5lZHWCF2Z1bm5lbC5jcy5jb2xvc3RhdGUuZWR1ghhnYWxpbGVvLmNzLmNvbG9zdGF0ZS5lZHWCFmdsZWFuLmNzLmNvbG9zdGF0ZS5lZHWCGWdyYW51bGVzLmNzLmNvbG9zdGF0ZS5lZHWCG2luZm9zcGFjZXMuY3MuY29sb3N0YXRlLmVkdYIaaXNzcmUyMDAzLmNzLmNvbG9zdGF0ZS5lZHWCF2xjcGMxMS5jcy5jb2xvc3RhdGUuZWR1ghVtYWNzLmNzLmNvbG9zdGF0ZS5lZHWCF21lbmRlbC5jcy5jb2xvc3RhdGUuZWR1ghZyYWRpeC5jcy5jb2xvc3RhdGUuZWR1ghZzb3N5bS5jcy5jb2xvc3RhdGUuZWR1ghhzcGluZGxlLmNzLmNvbG9zdGF0ZS5lZHWCFnN3aWZ0LmNzLmNvbG9zdGF0ZS5lZHWCGXN5bXBob255LmNzLmNvbG9zdGF0ZS5lZHWCGnZpdGFsaG9tZS5jcy5jb2xvc3RhdGUuZWR1ghh3ZWJtYWlsLmNzLmNvbG9zdGF0ZS5lZHWCFHd3dy5jcy5jb2xvc3RhdGUuZWR1ghh3d3d0ZXN0LmNzLmNvbG9zdGF0ZS5lZHUwDQYJKoZIhvcNAQEMBQADggGBACsqIxwaoXjYzXlUYYozQscujjnHQhiYwoP5ly+Rz55sLetkQzjC1bVbFYxvvwS5CQUTo+eLYYY63QeDBwm2XRkqdwg29+I6uIv9fv0PrZHTc2PRR76RhlyxhA3pwsqA2apOasRtMsdJoPmUO8HFAdmuYdZ5jBNuTr6w3CgohrdCfa3LPWXb7z2mwa84JLa3KK32Uhq2rqDSFuKUKQZXTKM4vSc5f2bU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 request-method GET response-head HTTP/1.1 200 OK
+Date: Wed, 07 Feb 2024 17:04:12 GMT
+Server: Apache/2.4.37 (AlmaLinux)
+Last-Modified: Sat, 30 Jan 2016 01:14:32 GMT
+ETag: "3803-52a82dfc68e00"
+Accept-Ranges: bytes
+Content-Length: 14339
+Content-Security-Policy: script-src 'self'  https://*.cs.colostate.edu www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://ajax.googleapis.com https://maxcdn.bootstrapcdn.com https://urban-sustain.org 'sha256-V8KVL4e3S2PwNnwHfycBcJMRnRhyyPiEpdxcGNLxzvk='; object-src 'none'; frame-src 'self' https://*.cs.colostate.edu www.google.com/recaptcha/ https://www.youtube.com https://youtube.com https://*.us.auth0.com
+X-XSS-Protection: 1; mode=block
+Content-Type: text/html; charset=UTF-8
+ original-response-headers Date: Wed, 07 Feb 2024 17:04:12 GMT
+Server: Apache/2.4.37 (AlmaLinux)
+Last-Modified: Sat, 30 Jan 2016 01:14:32 GMT
+ETag: "3803-52a82dfc68e00"
+Accept-Ranges: bytes
+Content-Length: 14339
+Content-Security-Policy: script-src 'self'  https://*.cs.colostate.edu www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://ajax.googleapis.com https://maxcdn.bootstrapcdn.com https://urban-sustain.org 'sha256-V8KVL4e3S2PwNnwHfycBcJMRnRhyyPiEpdxcGNLxzvk='; object-src 'none'; frame-src 'self' https://*.cs.colostate.edu www.google.com/recaptcha/ https://www.youtube.com https://youtube.com https://*.us.auth0.com
+X-XSS-Protection: 1; mode=block
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+ ctid 1 uncompressed-len 0 net-response-time-onstart 456 net-response-time-onstop 558   8
